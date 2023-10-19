@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>    
-  </head>
-  <body class="tema-claro">
-    <header></header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script src="js/javascript.js" defer></script>
+</head>
+<body class="tema-claro">
+    <header>
+        <div class="contenedorLogo">
+            <img class="imagenLogo" src="imagenes/nuevoLogotipo_vector.svg" alt=""/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="paginapersonal.html">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li>
+                    <label class="switch-5">
+                        <input type="checkbox" id="toggleTheme" />
+                        <span class="slider-5"></span>
+                      </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-      <p>Enhorabuena tu repositorio personal funciona correctamente ......</p>
-    </main>    
-  </body>
+        <section class="presentacionContenedor">
+            <article class="cajaPresentacion">
+                <h2>Hello!</h2>
+                <h1>I’m Rubén Arapiles</h1>
+                <p class="textoPresentacion">Desarrollador web apasionado y creativo. ¡Experiencias digitales excepcionales!</p>
+                <a href="#"><button>Contacto</button></a>
+            </article>
+            <article class="cajaFotopersonal">
+                <img class="miFoto" src="imagenes/miFoto.jpg" alt="">
+            </article>
+        </section>
+
+        <section class="formacionContenedor">
+            <h3>Formación</h3>
+            <article class="formacion1">
+                <img src="imagenes/herramienta2.svg" alt="icono herramienta"/>
+                <h4>Mantenimiento Industrial</h4>
+                <p class="textoFormacion">Técnico en instalaciones de climatización y refrigeración. Especializado en sistemas V.R.V y refrigerantes alternativos CO2 y NH3.</p>
+                    <p class="textoFormacion">Instalaciones eléctricas industriales. </p>
+                        <p class="textoFormacion">Programación de microautómatas PLC. </p>
+                        <p class="textoFormacion">Soldadura por arco eléctrico y oxiacetileno. </p>
+                    </article>
+            <article class="formacion2">
+                <img src="imagenes/diseno3.svg" alt="icono diseno"/>
+                <h4>Diseño Gráfico</h4>
+                <p class="textoFormacion">
+                    Composición, equilibrio y teoría del color. Maquetación de textos e imágenes.
+                    </p>
+                    <p class="textoFormacion"> Estudio del diseño web y publicitario, diseño tipográfico, y de logotipos, identidad de marca.</p>
+                        <p class="textoFormacion">Diseño digital con Adobe Photoshop, InDesign, Illustrator y Canva. Dibujo e ilustración digital.</p>
+            
+            </article>
+            <article class="formacion3">
+                <img src="imagenes/programacion2.svg" alt="icono programacion"/>
+                <h4>Desarrollo Web</h4>
+                <p class="textoFormacion">Programación frontend con Javascript vanilla y Vuejs. Programación backend con
+                    JAVA y Springboot. Y PHP con Laravel.
+                    
+                    </p>
+                    <p class="textoFormacion">Diseño de interfaces con HTML, CSS, Saas y Bootstrap. Diseño responsive.</p>
+                        <p class="textoFormacion">BBDD SQL con MariaDB. Uso de metodología SCRUM y conocimiento de contenedores.</p>
+            
+            </article>
+        </section>
+
+        <section class="aficionesContenedor">
+            <h3>Aficiones</h3>
+            <article class="aficion1">
+                <img src="imagenes/aficiones/inversion3.svg" alt="icono de inversiones"/>
+                <p>Economía</p>
+            </article>
+            <article class="aficion2">
+                <img src="imagenes/aficiones/negocios2.svg" alt="icono de negocios"/>
+                <p>Negocios</p>
+            </article>
+            <article class="aficion3">
+                <img src="imagenes/aficiones/tecnologia2.svg" alt="icono de tecnologia"/>
+                <p>Tecnología</p>
+            </article>
+            <article class="aficion4">
+                <img src="imagenes/aficiones/games.svg" alt="icono de videojuegos"/>
+                <p>Juegos</p>
+            </article>
+            <article class="aficion5">
+                <img src="imagenes/aficiones/escribir.svg" alt="icono de escribir"/>
+                <p>Escribir</p>
+            </article>
+            <article class="aficion6">
+                <img src="imagenes/aficiones/mecanica3.svg" alt="icono de mecanica"/>
+                <p>Mecánica</p>
+            </article>
+            <article class="aficion7">
+                <img src="imagenes/aficiones/dibujar1.svg" alt="icono de dibujar"/>
+                <p>Dibujo</p>
+            </article>
+            <article class="aficion8">
+                <img src="imagenes/aficiones/scifi1.svg" alt="icono de ciencia ficcion"/>
+                <p>Sci-Fi</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="icono" src="imagenes/whatsapp.svg" alt="iconoWhatsapp"/>
+        <img class="icono" src="imagenes/linkedin.svg" alt="iconoLinkdIn"/>
+        <img class="icono" src="imagenes/github.svg" alt="iconoGithub"/>
+        <img class="icono" src="imagenes/email.svg" alt="iconoMail"/>
+
+    </footer>
+
+</body>
 </html>
+
+<!--
+    TAREAS
+    -maquetar con background color esqueleto
+    -Montar enlaces
+    -Montar imagenes
+-->

@@ -1,0 +1,95 @@
+
+
+/*PONER SIEMPRE*/
+html{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    }
+
+/*COLORES*/
+/*variables colores claros*/
+
+    $color-1-claro: #FFFFFF;
+    $color-2-claro: #F5F3EE;
+    $color-3-claro: #604342;
+    $color-4-claro: #E5594F;
+    $color-5-claro: #000000;
+    $color-6-claro: #F0F8FF;
+
+/*array de colores*/
+$colores-oscuros : (
+    #19191a,
+    #373739,
+    #a29765,
+    #c9b977,
+    #e8e6cf,
+    #473b3b,
+    
+);
+
+:root {
+    .tema-claro{
+    --color-1:  #{$color-1-claro};
+    --color-2:  #{$color-2-claro};
+    --color-3:  #{$color-3-claro};
+    --color-4:  #{$color-4-claro};
+    --color-5:  #{$color-5-claro};
+    --color-6:  #{$color-6-claro};
+    }
+    .tema-oscuro{ //lista
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+      --color-6:  #{nth($colores-oscuros,6)};
+    }
+  }
+
+/*TAMANIOS*/
+$tamanios-secciones : (
+
+);
+
+$tamanios-subsecciones : ( //div dentro de cada seccion
+
+);
+
+//mapa sass
+$tamanios-iconos : (
+  'pequenio': 2.5%,
+  'medio': 26%,
+  'grande': 100%,
+);
+
+
+/*BODY*/
+body{
+    background-color: black;
+   height: auto;
+    position: relative;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+
+//modo DEBUG
+//con un if en el partial principal 
+$debug:true;
+
+@import "partials/_menu.scss";
+@import "partials/contenido";
+@import "partials/footer";
+@import "partials/boton";
+

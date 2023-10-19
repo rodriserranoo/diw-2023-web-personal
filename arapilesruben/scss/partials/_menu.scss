@@ -1,0 +1,58 @@
+
+/***HEADER***/
+header{
+    background-color: var(--color-2);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position:sticky;
+    top:0;
+    height: auto;
+    width: auto;
+    z-index: 10;
+    
+    
+}
+.contenedorLogo{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    vertical-align: bottom;
+    padding-top: 5px;
+    
+    
+    
+    
+}
+.contenedorLogo .imagenLogo {
+    max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+    height: auto; /* Mantener la relación de aspecto */
+    
+}
+/**Menu**/
+nav{
+    vertical-align: bottom;
+    display: inline-block;
+    width: 79%;
+    text-align: right;
+    
+    
+}
+ul a{
+   color: var(--color-5);
+   text-decoration: none;
+   font-size: 18px; 
+   font-weight: 600;
+   
+}
+a:hover {
+    color: var(--color-4);
+}
+
+li{
+    display: inline; /* quita formato lista */
+    padding-left: 5%;
+}
+
