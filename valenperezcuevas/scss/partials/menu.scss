@@ -1,0 +1,19 @@
+.sticky-menu {
+  position: sticky;
+  background-color: var(--color-2);
+  top: 10px;
+  z-index: 3;
+  text-align: center;
+
+  div {
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    width: 22%;
+
+    a {
+      color: var(--color-1);
+      font-size: 40px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+#idSeccion2 {
+  float: right;
+  width: 80%;
+  height: 250px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  column-count: 2;
+
+  h4 {
+    @include estilo-h4;
+    
+  }
+
+  p{
+    margin-bottom: 2px;
+    font-size: 23px;
+  }
+}

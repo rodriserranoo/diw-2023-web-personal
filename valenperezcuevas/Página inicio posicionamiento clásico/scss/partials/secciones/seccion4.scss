@@ -1,0 +1,13 @@
+#idSeccion4 {
+  float: right;
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-2);
+  color: var(--color-1);
+
+  .iconos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
