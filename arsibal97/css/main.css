@@ -1,0 +1,310 @@
+:root .tema-claro {
+  --color-1: #EF6262;
+  --color-2: #3FAABC;
+  --color-3: #22A699;
+  --color-4: #F3E99F;
+  --color-5: #F3AA60;
+  --color-6: white;
+}
+:root .tema-oscuro {
+  --color-1: #8e3a3a;
+  --color-2: #246671;
+  --color-3: #13685f;
+  --color-4: #9b935b;
+  --color-5: #9a6b3c;
+  --color-6: rgba(255, 255, 255, 0.3882352941);
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+.cabecera {
+  height: 150px;
+  border-bottom: 4px dashed white;
+  height: 150px;
+  background-color: var(--color-2);
+  position: relative;
+  top: 0%;
+  margin: 0px auto;
+}
+
+.cabecera div {
+  top: 38px;
+  position: absolute;
+  background-color: var(--color-4);
+  height: 65px;
+  width: 20%;
+  border-radius: 32px;
+  box-shadow: 1px 3px 5px black;
+}
+
+.cabecera div.m {
+  background-color: var(--color-1);
+  width: 22%;
+  height: 79px;
+}
+
+.cabecera div.m1 {
+  left: 12%;
+  top: 31px;
+}
+
+.cabecera div.m2 {
+  top: 31px;
+  left: 66%;
+}
+
+.cabecera div.m3 {
+  left: 43%;
+  border-radius: 91px;
+  width: 15%;
+  height: 89%;
+  top: 10px;
+}
+
+.cabecera div.g2 {
+  left: 44%;
+  border-radius: 90%;
+  width: 13%;
+  height: 81%;
+  top: 16px;
+  transition: transform 0.2s;
+  z-index: 1;
+}
+
+.cabecera div.g3 {
+  left: 67%;
+  transition: transform 0.2s;
+  z-index: 1;
+}
+
+.cabecera div.g1 {
+  text-align: center;
+  left: 13%;
+  transition: transform 0.2s;
+  z-index: 1;
+}
+
+.g1:active {
+  transform: scale(0.95);
+}
+
+.g2:active {
+  transform: scale(0.95);
+}
+
+.g3:active {
+  transform: scale(0.95);
+}
+
+@font-face {
+  font-family: glovo;
+  src: url(globo.ttf);
+}
+.g1 p {
+  font-family: glovo;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.g2 p {
+  font-family: glovo;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 0px;
+  margin-top: 27px;
+}
+
+.g3 p {
+  font-family: glovo;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  background-color: var(--color-1);
+  position: relative;
+  width: 100%;
+  height: 1700px;
+}
+
+.sec1 {
+  position: relative;
+  float: left;
+  width: 28%;
+  height: 1500px;
+}
+.sec1 .art11 {
+  position: absolute;
+  width: 85%;
+  height: 540px;
+  top: 450px;
+  left: 100px;
+}
+.sec1 .art12 {
+  position: absolute;
+  width: 85%;
+  height: 540px;
+  top: 1100px;
+  left: 100px;
+}
+
+.sec2 {
+  position: relative;
+  float: left;
+  width: 44%;
+  height: 1500px;
+}
+.sec2 .art21 {
+  position: absolute;
+  width: 75%;
+  height: 570px;
+  top: 150px;
+  left: 90px;
+}
+.sec2 .art21 div.foto {
+  background-color: var(--color-6);
+  position: relative;
+  width: 100%;
+  height: 570px;
+  box-shadow: 10px 10px 15px rgb(109, 109, 109);
+}
+.sec2 .art21 div.foto div.retrato {
+  position: absolute;
+  background-color: var(--color-5);
+  border-radius: 10%;
+  width: 90%;
+  height: 424px;
+  top: 20px;
+  left: 28px;
+}
+.sec2 .art21 div.foto div.retrato img {
+  width: 100%;
+  height: 112%;
+}
+.sec2 .art22 {
+  position: absolute;
+  width: 70%;
+  height: 500px;
+  top: 750px;
+  left: 109px;
+}
+
+.sec3 {
+  position: relative;
+  float: left;
+  width: 28%;
+  height: 1500px;
+}
+
+div.ma {
+  background-color: var(--color-5);
+  position: relative;
+  border-radius: 60px;
+  border: 3px solid black;
+  width: 100%;
+  height: 540px;
+}
+
+div.c {
+  background-color: var(--color-3);
+  position: absolute;
+  top: 47px;
+  left: 29px;
+  width: 85%;
+  height: 443px;
+  border-radius: 60px;
+  box-shadow: 2px 5px 10px black;
+  transition: transform 0.2s;
+}
+
+.c:active {
+  transform: scale(0.95);
+}
+
+.sec3 .art31 {
+  position: absolute;
+  width: 85%;
+  height: 540px;
+  top: 450px;
+  left: -30px;
+}
+
+.sec3 .art32 {
+  position: absolute;
+  width: 85%;
+  height: 540px;
+  top: 1100px;
+  left: -30px;
+}
+
+div.mrespuesta {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  background-color: var(--color-4);
+  border-radius: 60px;
+}
+
+div.respuesta {
+  position: absolute;
+  top: 28px;
+  left: 38px;
+  width: 85%;
+  height: 478px;
+  background-color: var(--color-3);
+  border-radius: 60px;
+}
+
+.i {
+  width: 100%;
+  height: 100%;
+}
+
+.pies {
+  display: block;
+  height: 120px;
+  width: 100%;
+  background-color: var(--color-1);
+  text-align: center;
+}
+
+div.b {
+  display: inline-block;
+  position: relative;
+  background-color: red;
+  border: 1px solid black;
+  width: 90px;
+  height: 90px;
+  border-radius: 60px;
+  z-index: 1;
+  margin: 10px 100px;
+}
+
+div.mb {
+  background-color: var(--color-5);
+  position: absolute;
+  border: 1px solid black;
+  top: 5px;
+  left: 5px;
+  width: 86%;
+  height: 87%;
+  border-radius: 60px;
+}
+
+body {
+  margin: 0px;
+}
+
+p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

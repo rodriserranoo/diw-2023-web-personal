@@ -1,0 +1,66 @@
+$color1-claro:#EF6262;
+$color2-claro:#3FAABC;
+$color3-claro:#22A699;
+$color4-claro:#F3E99F;
+$color5-claro:#F3AA60;
+$color6-claro:white;
+
+$colores-oscuros : (
+  #8e3a3a,
+  #246671,
+  #13685f,
+  #9b935b,
+  #9a6b3c,
+  #ffffff63,
+  
+);
+:root{
+  .tema-claro{
+    --color-1: #{$color1-claro};
+    --color-2: #{$color2-claro};
+    --color-3: #{$color3-claro};
+    --color-4: #{$color4-claro};
+    --color-5: #{$color5-claro};
+    --color-6: #{$color6-claro};
+  }
+  .tema-oscuro{
+    --color-1: #{nth($colores-oscuros,1)};
+    --color-2: #{nth($colores-oscuros,2)};
+    --color-3: #{nth($colores-oscuros,3)};
+    --color-4: #{nth($colores-oscuros,4)};
+    --color-5: #{nth($colores-oscuros,5)};
+    --color-6: #{nth($colores-oscuros,6)};
+
+  }
+}
+
+$tamanio-horizontal-porcentaje: (
+  "xxs" : 28%,
+  "xs": 44%,
+  "s": 70%,
+  "m": 75%,
+  "l":85%,
+  "xl": 90%,
+  "xxl":100%
+);
+
+
+
+
+
+
+
+@import "partial/_menu.scss";
+@import "partial/_cuerpo.scss";
+@import "partial/_footer.scss";
+
+body{
+    margin: 0px;
+}
+
+p{
+  text-align: center;
+}
+
+  
+
