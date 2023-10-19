@@ -1,0 +1,39 @@
+
+//Mixin
+
+@mixin estilo-h4 {
+  text-align: center;
+  align-items: center;
+  text-decoration: underline;
+}
+/* MODO DEBUG*/
+// Ver IF, en el partial principal.....
+$debug: false;
+
+@import "partials/footer.scss";
+@import "partials/menu";
+@import "partials/cabecera.scss";
+@import "partials/aside.scss";
+@import "partials/secciones/seccion1.scss";
+@import "partials/secciones/seccion2.scss";
+@import "partials/secciones/seccion3.scss";
+@import "partials/secciones/seccion4.scss";
+@import "partials/boton.scss";
+@import "partials/mapas/mapa_colores.scss";
+@import "partials/mapas/mapa_iconos.scss";
+
+
+
+body,
+* {
+  margin: 0px;
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto.ttf") format("ttf");
+}

@@ -1,0 +1,70 @@
+$tamaño_iconos: (
+    peque: 50px,
+    medio: 75px,
+    grande: 125px
+  );
+  
+  #idSeccion1 .software-icon {
+    $tamaño_clave: peque;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    margin: ($tamaño_valor / 4); 
+  }
+  
+  #idSeccion2 .software-icon {
+    $tamaño_clave: peque;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    margin: ($tamaño_valor / 3); 
+  }
+  
+  #idSeccion3 .software-icon {
+    $tamaño_clave: peque;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    margin: ($tamaño_valor / 2);
+  }
+  
+  #idSeccion4 .software-icon {
+    $tamaño_clave: peque;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    margin: ($tamaño_valor / 3); 
+  }
+
+  #idSeccion4 .iconos-contenedor div img {
+    $tamaño_clave: grande;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    
+
+  }
+
+  aside .software-icon {
+    $tamaño_clave: medio;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    margin: ($tamaño_valor / 4); 
+  }
+
+  footer .classNavFooter img{
+    $tamaño_clave: medio;
+    $tamaño_valor: map-get($tamaño_iconos, $tamaño_clave);
+  
+    width: $tamaño_valor;
+    height: $tamaño_valor;
+    margin: ($tamaño_valor / 4);
+
+  }

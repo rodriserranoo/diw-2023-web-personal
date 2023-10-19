@@ -1,0 +1,19 @@
+$colores-claros: (#c8e4b2, #7eaa92, #9ed2be, #7eaa92, #828282);
+$colores-oscuros: (#3e07d6, #9aaaf1, #634ed8, #EBE645, #fdfdce);
+
+:root {
+  .tema-claro {
+    --color-1: #{nth($colores-claros, 1)};
+    --color-2: #{nth($colores-claros, 2)};
+    --color-3: #{nth($colores-claros, 3)};
+    --color-4: #{nth($colores-claros, 4)};
+    --color-5: #{nth($colores-claros, 5)};
+  }
+  .tema-oscuro {
+    --color-1: #{nth($colores-oscuros, 1)};
+    --color-2: #{nth($colores-oscuros, 2)};
+    --color-3: #{nth($colores-oscuros, 3)};
+    --color-4: #{nth($colores-oscuros, 4)};
+    --color-5: #{nth($colores-oscuros, 5)};
+  }
+}

@@ -1,0 +1,17 @@
+footer {
+  position: fixed;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  width: 100%;
+  bottom: 15px;
+  
+  
+
+  .classNavFooter {
+    display: inline-block;
+    padding: 15px;
+    width: 32%;
+    text-align: center;
+    
+  }
+}
