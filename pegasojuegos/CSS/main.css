@@ -88,7 +88,7 @@ body {
   margin-top: 10px;
   border: 10px solid var(--color-3);
   z-index: 2;
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/modoDebug.png);
+  background-image: url(../imagenes/foto.jpg);
 }
 
 /* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
@@ -263,19 +263,19 @@ body {
 }
 
 #idjuegos {
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/palanca-de-mando.png);
+  background-image: url(../imagenes/palanca-de-mando.png);
 }
 
 #idescalada {
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/alpinismo.png);
+  background-image: url(../imagenes/alpinismo.png);
 }
 
 #idleer {
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/libro.png);
+  background-image: url(../imagenes/libro.png);
 }
 
 #idcocinar {
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/frito.png);
+  background-image: url(../imagenes/frito.png);
 }
 
 .carder {
@@ -528,11 +528,11 @@ body {
 }
 
 #idinstagram {
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/instagram.png);
+  background-image: url(../imagenes/instagram.png);
 }
 
 #idcorreo {
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/gmail.png);
+  background-image: url(../imagenes/gmail.png);
 }
 
 #idpie {
@@ -553,7 +553,7 @@ body {
 #idlogo {
   display: inline-block;
   background-size: cover;
-  background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/logo.png);
+  background-image: url(../imagenes/logo.png);
   width: 60px;
   height: 60px;
 }
