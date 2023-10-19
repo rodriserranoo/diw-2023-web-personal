@@ -1,0 +1,351 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #CDFFBB;
+    margin: 0;
+}
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #00FFD1;
+    z-index: 1;
+    text-align: center;
+    padding: 15px;
+}
+
+#idInicio {
+    display: inline-block;
+    width: 33%;
+    text-align: left;
+}
+
+#idMiCV{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+#idSobreMi {
+    display: inline-block;
+    width: 33%;
+    text-align: right   ;
+}
+
+/* main */
+
+/* Inicio */
+#idInicio-container {
+    position: relative;
+    top:10%;
+
+    height: 500px;
+    width: 100%; 
+}
+
+#idNombre {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    font-size: 50px;
+}
+#idImg {    
+    position: absolute;
+    top: 15%;
+    left: 65%;
+
+    height: 350px;
+    width: 350px;
+}
+
+#idSombraImg {    
+    position: absolute;
+    top: 12%;
+    left: 64%;
+
+    height: 350px;
+    width: 350px;
+    background-color: #00FFD1;
+    opacity: 40%;
+}
+
+#idLinea {
+    position: relative;
+    top: 0%;
+    left: 12%;
+
+    width: 75%;
+    height: 7px;
+    background-color: #00FFD1;  
+}
+
+/* Sobre mi */
+#idSobreMi-container {
+    position: relative;
+
+    height: 1500px;
+    width: 100%; 
+    text-align: center;
+}
+
+#idSobreMiTexto {
+    position: absolute;
+    top: 5%;
+    left: 43%;
+    font-size: 40px;
+}
+
+#idDescripcion {
+    position: absolute;
+    top: 15%;
+    left: 39%;
+}
+/* Datos personales */
+#idDatosPersonales-container {
+    position: absolute;
+
+    top: 30%;
+    left: 37%;
+
+    height:20%;
+    width: 25%; 
+    text-align: center;
+}
+
+/* Nacimiento */
+#idNacimiento {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+#idLineaNacimiento {
+    position: relative;
+    top: 14%;
+    left: 50%;
+
+    width: 5%;
+    height: 3px;
+    background-color: black;  
+}
+
+#idNacimientoTexto {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+}
+
+/* Residencia */
+#idResidencia {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+#idLineaResidencia {
+    position: relative;
+    top: 51%;
+    left: 50%;
+
+    width: 5%;
+    height: 3px;
+    background-color: black;  
+}
+
+#idResidenciaTexto {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+/* Procedencia */
+#idProcedencia {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+
+#idLineaProcedencia {
+    position: relative;
+    top: 82%;
+    left: 50%;
+
+    width: 5%;
+    height: 3px;
+    background-color: black;  
+}
+
+#idProcedenciaTexto {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+}
+
+/* Formacion */
+#idFormacion-container {
+    position: absolute;
+    background-color: #00FFD1;
+
+    top: 60%;
+    left: 37%;
+
+    height:15%;
+    width: 25%; 
+    text-align: center;
+}
+
+#idSombraFormacion {    
+    position: absolute;
+    top: 59%;
+    left: 36%;
+
+    height: 15%;
+    width: 25%;
+    background-color: #00FFD1;
+    opacity: 40%;
+}
+
+#idFormacionTexto {
+    position: absolute;
+    top: 0%;
+    left: 4%;
+}
+
+#idScroll {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+
+    width : 100%;
+    height : 75%;
+    overflow : auto;
+}
+
+#idContenedorF {
+    background-color: #A2FC82;
+
+    position: relative;
+    left: 10%;
+    height:40%;
+    width: 80%; 
+    text-align: center;
+}
+
+/* Aficiones */
+#idAficiones-container {
+    position: absolute;
+    background-color: #00FFD1;
+
+    top: 80%;
+    left: 37%;
+
+    height:15%;
+    width: 25%; 
+    text-align: center;
+}
+
+#idSombraAficiones {    
+    position: absolute;
+    top: 79%;
+    left: 36%;
+
+    height: 15%;
+    width: 25%;
+    background-color: #00FFD1;
+    opacity: 40%;
+}
+
+#idAficionesTexto {
+    position: absolute;
+    top: 0%;
+    left: 4%;
+}
+
+#idContenedorA {
+    background-color: #A2FC82;
+
+    position: relative;
+    left: 10%;
+    height:40%;
+    width: 55%; 
+    text-align: center;
+    padding-top: 3%;
+}
+
+.imgAficiones {
+    position: relative;
+    left: 75%;
+    top: -85%;
+    height: 100%;
+    width: 40%; 
+}
+
+/* Footer */
+ footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #00FFD1;
+    text-align: center;
+} 
+
+.redesSociales {
+    height: 32px;
+    width: 32px;
+}
+
+#idGitHub {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idLinkedin {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idGmail {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idContacto {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idInstagram {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idX {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idFacebook {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+/* Ventanas */
+.ventana {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 255, 209, 0.7);
+    text-align: center;
+}

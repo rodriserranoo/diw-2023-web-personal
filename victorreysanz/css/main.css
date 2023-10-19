@@ -1,0 +1,408 @@
+@charset "UTF-8";
+:root .tema-claro {
+  --color-1: #CDFFBB;
+  --color-2: #00FFD1;
+  --color-3: #A2FC82;
+  --color-4: rgba(0, 255, 209, 0.4);
+  --color-5: black;
+}
+
+.tema-oscuro {
+  --color-1: #352F44;
+  --color-2: #5C5470;
+  --color-3: #008170;
+  --color-4: rgba(185, 180, 199, 0.4);
+  --color-5: #fff;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-1);
+  margin: 0;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-2);
+  z-index: 1;
+  text-align: center;
+  padding: 15px;
+}
+
+#idInicio {
+  display: inline-block;
+  width: 33%;
+  text-align: left;
+  color: var(--color-5);
+}
+
+#idMiCV {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  color: var(--color-5);
+}
+
+#idSobreMi {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  color: var(--color-5);
+}
+
+.switch-5 {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+
+.slider-5 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 25px;
+  background-color: var(--color-1);
+  border: 1px solid black;
+}
+
+.slider-5:before {
+  font-family: "Font Awesome 5 Free";
+  content: "🔆";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  font-size: 20px;
+  transition: 0.3s ease all;
+}
+
+input:checked + .slider-5:before {
+  transform: translate(20px) rotate(360deg);
+  content: "🌙";
+}
+
+input:checked + .slider-5 {
+  background-color: #4e4e4e;
+  left: 0px;
+}
+
+/* main */
+/* Inicio */
+#idInicio-container {
+  position: relative;
+  top: 10%;
+  height: 500px;
+  width: 100%;
+}
+
+#idNombre {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  font-size: 50px;
+  color: var(--color-5);
+}
+
+#idImg {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  height: 350px;
+  width: 350px;
+}
+
+#idSombraImg {
+  position: absolute;
+  top: 12%;
+  left: 64%;
+  height: 350px;
+  width: 350px;
+  background-color: var(--color-4);
+}
+
+#idLinea {
+  position: relative;
+  top: 0%;
+  left: 12%;
+  width: 75%;
+  height: 7px;
+  background-color: var(--color-2);
+}
+
+/* Sobre mi */
+#idSobreMi-container {
+  position: relative;
+  height: 1500px;
+  width: 100%;
+  text-align: center;
+}
+
+#idSobreMiTexto {
+  position: absolute;
+  top: 5%;
+  left: 43%;
+  font-size: 40px;
+  color: var(--color-5);
+}
+
+#idDescripcion {
+  position: absolute;
+  top: 15%;
+  left: 39%;
+  color: var(--color-5);
+}
+
+/* Datos personales */
+#idDatosPersonales-container {
+  position: absolute;
+  top: 30%;
+  left: 37%;
+  height: 20%;
+  width: 25%;
+  text-align: center;
+  color: var(--color-5);
+}
+
+/* Nacimiento */
+#idNacimiento {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: var(--color-5);
+}
+
+#idLineaNacimiento {
+  position: relative;
+  top: 14%;
+  left: 50%;
+  width: 5%;
+  height: 3px;
+  background-color: var(--color-5);
+}
+
+#idNacimientoTexto {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  color: var(--color-5);
+}
+
+/* Residencia */
+#idResidencia {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: var(--color-5);
+}
+
+#idLineaResidencia {
+  position: relative;
+  top: 51%;
+  left: 50%;
+  width: 5%;
+  height: 3px;
+  background-color: var(--color-5);
+}
+
+#idResidenciaTexto {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  color: var(--color-5);
+}
+
+/* Procedencia */
+#idProcedencia {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  color: var(--color-5);
+}
+
+#idLineaProcedencia {
+  position: relative;
+  top: 82%;
+  left: 50%;
+  width: 5%;
+  height: 3px;
+  background-color: var(--color-5);
+}
+
+#idProcedenciaTexto {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  color: var(--color-5);
+}
+
+/* Formacion */
+#idFormacion-container {
+  position: absolute;
+  background-color: var(--color-2);
+  top: 60%;
+  left: 37%;
+  height: 15%;
+  width: 25%;
+  text-align: center;
+}
+
+#idSombraFormacion {
+  position: absolute;
+  top: 59%;
+  left: 36%;
+  height: 15%;
+  width: 25%;
+  background-color: var(--color-4);
+}
+
+#idFormacionTexto {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+  color: var(--color-5);
+}
+
+#idScroll {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+  overflow: auto;
+}
+
+#idContenedorF {
+  background-color: var(--color-3);
+  position: relative;
+  left: 10%;
+  height: 40%;
+  width: 80%;
+  text-align: center;
+  color: var(--color-5);
+}
+
+/* Aficiones */
+#idAficiones-container {
+  position: absolute;
+  background-color: var(--color-2);
+  top: 80%;
+  left: 37%;
+  height: 15%;
+  width: 25%;
+  text-align: center;
+}
+
+#idSombraAficiones {
+  position: absolute;
+  top: 79%;
+  left: 36%;
+  height: 15%;
+  width: 25%;
+  background-color: var(--color-4);
+}
+
+#idAficionesTexto {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+  color: var(--color-5);
+}
+
+#idContenedorA {
+  background-color: var(--color-3);
+  position: relative;
+  left: 10%;
+  height: 40%;
+  width: 55%;
+  text-align: center;
+  padding-top: 3%;
+  color: var(--color-5);
+}
+
+.imgAficiones {
+  position: relative;
+  left: 75%;
+  top: -85%;
+  height: 100%;
+  width: 40%;
+}
+
+/* Footer */
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--color-2);
+  text-align: center;
+}
+
+.redesSociales {
+  height: 32px;
+  width: 32px;
+}
+
+#idGitHub {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+#idLinkedin {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+#idGmail {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+#idContacto {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+#idInstagram {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+#idX {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+#idFacebook {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+}
+
+/* Ventanas */
+.ventana {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--color-4);
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

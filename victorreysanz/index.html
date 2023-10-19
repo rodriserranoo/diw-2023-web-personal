@@ -1,14 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>    
-  </head>
-  <body class="tema-claro">
-    <header></header>
-    <main>
-      <p>Enhorabuena tu repositorio personal funciona correctamente ......</p>
-    </main>    
-  </body>
-</html>
+<head>
+    <title>Pagina personal de Victor Rey</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/javascript.js" defer></script>
+</head>
+<body class="tema-claro">
+    <!-- menu -->
+    <header>
+            <a id="idInicio" href="">INICIO</a>
+            <a id="idMiCV">MI CV</a>
+            <a id="idSobreMi">SOBRE MI</a>
+            <label class="switch-5">
+                <input type="checkbox" id="toggleTheme" />
+                <span class="slider-5"></span>
+            </label>
+    </header>
+     <main>
+        
+        <!-- Inicio -->
+        <div id="idInicio-container">
+            <h1 id="idNombre">Victor Rey Sanz</h1>
+            <div id="idSombraImg"></div>
+            <img id="idImg" src="imagenesPaginaPersonal/victorrey.jpg" alt="Victor Rey Sanz">
+        </div>
+
+        <div id="idLinea"></div>
+
+        <!-- Sobre Mi -->
+        <div id="idSobreMi-container">
+            <h1 id="idSobreMiTexto">SOBRE MI</h1>
+            <p id="idDescripcion">DescripcionDescripcionDescripcionDescripcion<br>DescripcionDescripcionDescripcionDescripcion<br>DescripcionDescripcionDescripcion</p>
+            
+            <!-- Datos personales -->
+            <div id="idDatosPersonales-container">
+                <p id="idNacimiento">Nacimiento</p>
+                <div id="idLineaNacimiento"></div>
+                <p id="idNacimientoTexto">30/09/2003</p>
+
+                <p id="idResidencia">Residencia</p>
+                <div id="idLineaResidencia"></div>
+                <p id="idResidenciaTexto">Madrid, España</p>
+
+                <p id="idProcedencia">Procedencia</p>
+                <div id="idLineaProcedencia"></div>
+                <p id="idProcedenciaTexto">Madrid, España</p>
+            </div>
+
+            <!-- Formacion -->
+            <div id="idSombraFormacion"></div>
+            <div id="idFormacion-container">
+                <p id="idFormacionTexto">FORMACION</p>
+                <div id="idScroll">
+                    <div id="idContenedorF">
+                        <p>Bachillerato de ciencias<br/><br/>Casa de la Virgen</p>
+                    </div><br/>
+                    <div id="idContenedorF">
+                        <p>FP Desarrollo de Aplicaciones Multiplataforma<br/><br/>Santa Ana y San Rafael</p>
+                    </div><br/>
+                    <div id="idContenedorF">
+                        <p>FP Desarrollo de Aplicaciones Web<br/><br/>Francisco de Goya</p>
+                    </div><br/>
+                </div>
+            </div>
+
+            <!-- Aficiones -->
+            <div id="idSombraAficiones"></div>
+            <div id="idAficiones-container">
+                <p id="idAficionesTexto">AFICIONES</p>
+                <div id="idScroll">
+                    <div id="idContenedorA">
+                        <p>Jugar videojuegos</p>
+                        <img class="imgAficiones" src="imagenesPaginaPersonal/videojuegos.jpg" alt="Videojuegos">
+                    </div><br/>
+                    <div id="idContenedorA">
+                        <p>Leer libros</p>
+                        <img class="imgAficiones" src="imagenesPaginaPersonal/libros.png" alt="Libros">
+                    </div><br/>
+                    <div id="idContenedorA">
+                        <p>Jugar al frontenis</p>
+                        <img class="imgAficiones" src="imagenesPaginaPersonal/frontenis.jpg" alt="Frontenis">
+                    </div><br/>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer -->
+      <footer>
+        <a id="idGitHub" href="https://github.com/VictorReySanz">    
+            <img class="redesSociales" src="imagenesPaginaPersonal/github.png" alt="GitHub">
+        </a>
+        <a id="idLinkedin" href="https://es.linkedin.com/">    
+            <img class="redesSociales" src="imagenesPaginaPersonal/linkedin.png" alt="Linkedin">
+        </a>
+        <a id="idGmail">    
+            <img class="redesSociales" src="imagenesPaginaPersonal/gmail.png" alt="Correo electrónico">
+        </a>
+        <a id="idContacto">    
+            <img class="redesSociales" src="imagenesPaginaPersonal/contacto.png" alt="Telefono contacto">
+        </a>
+
+        <a id="idInstagram" href="https://www.instagram.com/victor_rey_30">
+            <img class="redesSociales" src="imagenesPaginaPersonal/instagram.png" alt="Instagram">
+        </a>
+        <a id="idX" href="https://twitter.com/VctorRey11">
+            <img class="redesSociales" src="imagenesPaginaPersonal/x.png" alt="X">
+        </a>
+        <a id="idFacebook" href="https://www.facebook.com/victor.rey.1840">
+            <img class="redesSociales" src="imagenesPaginaPersonal/facebook.png" alt="Facebook">
+        </a>
+    </footer> 
+
+    <!-- Ventanas emergentes -->
+    <!-- Telefono -->
+    <div class="ventana" id="miVentanaContactos">
+        <h2>Telefono de contacto</h2>
+        <p>601117051</p>
+        <button onclick="cerrarVentanaContactos()">Cerrar</button>
+    </div>
+
+    <!-- Correo -->
+    <div class="ventana" id="miVentanaGmail">
+        <h2>Correo electrónico</h2>
+        <p>vreysanz@gmail.com</p>
+        <button onclick="cerrarVentanaGmail()">Cerrar</button>
+    </div>
+
+    <script>
+        // Función para mostrar la ventana emergente
+        function mostrarVentanaContactos() {
+            document.getElementById("miVentanaContactos").style.display = "block";
+        }
+
+        function mostrarVentanaGmail() {
+            document.getElementById("miVentanaGmail").style.display = "block";
+        }
+
+        // Función para cerrar la ventana emergente
+        function cerrarVentanaContactos() {
+            document.getElementById("miVentanaContactos").style.display = "none";
+        }
+        function cerrarVentanaGmail() {
+            document.getElementById("miVentanaGmail").style.display = "none";
+        }
+
+        // Agregar un evento al enlace para mostrar la ventana emergente al hacer clic
+        document.getElementById("idContacto").addEventListener("click", mostrarVentanaContactos);
+        document.getElementById("idGmail").addEventListener("click", mostrarVentanaGmail);
+    </script>
+</body>
+</html> 

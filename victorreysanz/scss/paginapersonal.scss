@@ -1,0 +1,53 @@
+
+:root
+  .tema-claro {
+    --color-1: #CDFFBB;
+    --color-2: #00FFD1;
+    --color-3: #A2FC82;
+    --color-4: rgba(0, 255, 209, 0.4);
+    --color-5: black;
+  }
+  .tema-oscuro {
+    --color-1: #352F44;
+    --color-2: #5C5470;
+    --color-3: #008170;
+    --color-4: rgba(185, 180, 199, 0.4);
+    --color-5: #fff;
+  }
+
+  $tamanio-vertical: (
+    iconos: 32px,
+    foto: 350px,
+    datosGeneral: 15%,
+    datosFormacion: 40%,
+    datosAficion: 40%
+  );
+
+  $tamanio-horizontal: (
+    iconos: 32px,
+    foto: 350px,
+    datosGeneral: 25%,
+    datosFormacion: 80%,
+    datosAficion: 55%
+  );
+
+  $debub:true;
+  
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-1);
+    margin: 0;
+}
+
+/* Header */
+@import "partials/_menu.scss";
+
+/* main */
+@import "partials/contenido.scss";
+
+/* Footer */
+@import "partials/_footer.scss";
