@@ -1,0 +1,65 @@
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-2);
+    text-align: center;
+} 
+
+.redesSociales {
+    height: map-get($tamanio-vertical, iconos);
+    width: map-get($tamanio-horizontal, iconos);
+}
+
+#idGitHub {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idLinkedin {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idGmail {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idContacto {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idInstagram {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idX {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+#idFacebook {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+
+/* Ventanas */
+.ventana {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--color-4);
+    text-align: center;
+}
