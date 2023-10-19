@@ -1,0 +1,26 @@
+
+//contenido o main
+.datos,.formacion{
+    background-color:var(--color-2);
+    float:left;
+    width: 40%;
+    margin: 5%;
+}
+.aficiones{
+    float: left;
+    width: 100%;
+}
+.tituloaficiones{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.aficiones{
+    text-align: center;
+}
+.aficiones img{
+    display: inline-block;
+    width: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
