@@ -1,0 +1,23 @@
+
+.main:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 5px solid white;
+    background: black;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+
+}
+.main{
+    width: 300%;
+    height: 100%;
+    position: relative;
+    right: 100%;
+    background-color:rgb(228, 171, 0);
+    margin: 0 auto;
+    display: flex;
+    z-index: -2;
+}

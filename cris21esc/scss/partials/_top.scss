@@ -1,0 +1,17 @@
+header{
+    position: sticky;
+    top:0px;
+    z-index: 10;
+}
+#contenedortop {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    padding: 20px; /* Añade espacio alrededor de los elementos */
+    background-color: red;
+}  
+
+.cajatop {
+    background-color: blue;
+    padding: 10px 20px;
+    margin: 0px auto; /* Añade espacio entre los elementos */
+}

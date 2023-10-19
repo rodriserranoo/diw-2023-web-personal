@@ -1,0 +1,16 @@
+#centro {
+    margin: auto;
+    height: 33vw;
+    width: 33vw;
+    border-radius: 100%;
+    background-color: blue;
+    position: relative;
+    justify-content: space-between;
+    background-image: url("./imagen.jpg");
+    background-size: cover;
+  }
+  
+  #centro span {
+    display: inline-block;
+    vertical-align: middle;
+  }
