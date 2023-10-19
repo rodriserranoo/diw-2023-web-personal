@@ -1,0 +1,49 @@
+@import "./partials/_boton.scss";
+@import "./partials/contenido";
+@import "./partials/footer";
+@import "./partials/menu";
+
+$color-1-claro: #efefef;
+$color-2-claro: pink;
+$color-3-claro: black;
+
+
+$colores-oscuros : (
+  rgb(10, 10, 10),
+  darkgrey,
+  aliceblue
+);
+
+:root {
+    .tema-claro{
+    --color-1:  #{$color-1-claro};
+    --color-2:  #{$color-2-claro};
+    
+    --color-3:  #{$color-3-claro};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+    }
+  } 
+
+body{
+    background-color:var(--color-1);
+    width: 100%;
+    height:auto;
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
