@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/MiPagina1.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Mi Pagina 1</title>
+    
+<link rel="stylesheet" href="./Mi Pagina 1_files/miPagina.css"></head>
+<body>
+    <header class="header">
+        <img class="foto" src="./Mi Pagina 1_files/BocetoFinal.png" alt="foto de perfil">
+        <h1 class="nombre">David Martin Diaz</h1>
+        <nav class="menu">
+            <a href="http://127.0.0.1:5500/MiPagina1.html#" class="inicio">Inicio</a>
+            <a href="http://127.0.0.1:5500/MiPagina1.html#" class="sobremi">Sobre mi</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section>
+            <div class="formacion">
+                <h2 class="h2formacion">Formacion</h2>
+                <ul>
+                    <li>Primaria</li>
+                    <li>ESO</li>
+                    <li>Prueba acceso universidad mayores 25</li>
+                    <li>Curso monitor de natación</li>
+                    <li>Curso entrenador auxiliar de natación</li>
+                    <li>Curso entrenador superior de natación</li>
+                </ul>
+            </div>
+            <div class="datos-personales">
+                <h2 class="h2datospersonales">Datos personales</h2>
+                <ul>
+                    <li>Nombre: David Martin Diaz</li>
+                    <li>Fecha nacimiento: 28-11-1995</li>
+                    <li>Lugar de nacimiento: Alcala de Henares</li>
+                    <li>Lugar de residencia: Alcala de Henares</li>
+                    <li>Telefono: 636332177</li>
+                    <li>Correo electronico: davidmd95@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="mis-aficiones">
+                <h2 class="h2misaficiones">Mis aficiones</h2>
+                <ul>
+                    <li>lorem </li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                </ul>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <h2 class="misredessociales">MIS REDES SOCIALES</h2>
+            <a class="correo" href="http://www.hotmail.com/"><img src="./Mi Pagina 1_files/correo.png" alt="icono correo" height="50" width="50"></a>
+            <a class="github" href="http://www.github.com/"><img src="./Mi Pagina 1_files/github.png" alt="icono github" height="50" width="50"></a>
+            <a class="linkedin" href="http://www.linkedin.com/"><img src="./Mi Pagina 1_files/linkedin.png" alt="icono linkedin" height="50" width="50"></a>
+            <a class="facebook" href="http://www.facebook.com/"><img src="./Mi Pagina 1_files/facebook.png" alt="icono facebook" height="50" width="50"></a>
+            <a class="whatsapp" href="http://www.whatsapp.com/"><img src="./Mi Pagina 1_files/whatsapp.png" alt="icono whatsapp" height="50" width="50"></a>
+            <a class="telefono" href="http://www.telefono.com/"><img src="./Mi Pagina 1_files/llamada-telefonica.png" alt="icono telefono" height="50" width="50"></a>
+        </nav>
+    </footer>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,43 @@
+.foto{
+    float: left;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
+.header{
+    height: 250px;
+    background-color: var(--color-4);
+}
+
+.nombre{
+    width: 84.66%;
+    float: left;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+.menu{
+position: sticky;
+display: inline-block;
+top: 250px;
+width: 84.66%;
+text-align: center;
+
+}
+
+.inicio{
+    font-size: 45px;
+    float: left;
+    margin-left: 25%;
+    color: white;
+
+}
+
+.sobremi{
+    font-size: 45px;
+    float: right;
+    margin-right: 25%;
+    color: white;
+
+}

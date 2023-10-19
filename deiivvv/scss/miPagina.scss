@@ -1,0 +1,64 @@
+
+
+$color-1-claro: #ffffff;
+$color-2-claro: #DAFFFB;
+$color-3-claro: #64CCC5;
+$color-4-claro: #176B87;
+
+$colores-oscuros : (
+  #000000,
+  #d6b1e7,
+  #c118e2,
+  #a343e4,
+);
+
+:root {
+  .tema-claro{
+  --color-1:  #{$color-1-claro};
+  --color-2:  #{$color-2-claro};
+  --color-3:  #{$color-3-claro};
+  --color-4:  #{$color-4-claro};
+  }
+  .tema-oscuro{
+    --color-1:  #{nth($colores-oscuros,1)};
+    --color-2:  #{nth($colores-oscuros,2)};
+    --color-3:  #{nth($colores-oscuros,3)};
+    --color-4:  #{nth($colores-oscuros,4)};
+  }
+}
+
+/*----------mapas-------------*/
+$tamanios-iconos-horizontal : (
+ 'pequenio':40px, 
+ 'medio':60px,
+ 'grande':100px
+);
+
+$tamanios-iconos-vertical : (
+ 'pequenio':40px, 
+ 'medio':60px,
+ 'grande':100px
+);
+/*----------mapas-------------*/
+
+
+
+/* ----------Poner siempre------------ */
+html {                                  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+@import "./partials/_boton.scss";
+@import "./partials/header";
+@import "./partials/main";
+@import "./partials/footer";

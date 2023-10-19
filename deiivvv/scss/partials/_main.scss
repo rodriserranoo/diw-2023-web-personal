@@ -1,0 +1,49 @@
+body{
+    background-color: var(--color-3);
+}
+
+.formacion {
+    background-color: var(--color-2);
+    float: left;
+    left: 5%;
+    width: 44%;
+    margin: 3%;
+    margin-bottom: 0;
+}
+.h2formacion{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.datos-personales {
+    background-color: var(--color-2);
+    width: 44%;
+    float: left;
+    margin: 3%;
+    margin-bottom: 0;
+}
+.h2datospersonales{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.mis-aficiones{
+    width: 94%;
+    background-color: var(--color-2);
+    float: left;
+    margin: 3%;
+}
+
+.imgaficiones{
+    margin-left: 14%;
+}
+
+
+.h2misaficiones{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+section {
+    margin: auto;
+}
