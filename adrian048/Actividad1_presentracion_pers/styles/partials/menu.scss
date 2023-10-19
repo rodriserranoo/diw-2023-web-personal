@@ -1,0 +1,29 @@
+#contenedor{
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    background-color: var(--color-3);
+    height: 100%;
+}
+
+.foto-construccion{
+    width: 50%;
+    margin-left: 25%;
+    @if $debug==true{
+        display: inline;
+    }@else if $debug == false{
+        display: none;
+    }
+}
+
+.botones{
+    position: sticky;
+    top:0;
+    margin: auto;
+}
+.menuhamburguesa{
+    width: map-get($tamanio-iconos-ancho, 'muy-pequeno');
+    height: 3.5%;
+    padding: 0%;
+    margin: 0%;
+}
