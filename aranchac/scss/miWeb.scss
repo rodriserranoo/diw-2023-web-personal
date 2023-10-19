@@ -1,0 +1,73 @@
+// uiverse.io
+// uicolors
+
+$tam-icons-width : (
+ 'pequenio':25px, 
+ 'medio':60px,
+ 'grande':75px
+);
+
+$tam-icons-height : (
+ 'pequenio':25px, 
+ 'medio':60px,
+ 'grande':75px
+);
+
+$color-1-claro: white;
+$color-2-claro: black;
+$color-3-claro: rgb(192, 192, 192);
+$color-4-claro: rgb(180, 240, 255);
+$color-5-claro: rgb(214, 169, 255);
+
+$colores-oscuros : (
+    rgb(84, 98, 151), 
+    black,
+    #799bbe,
+    rgb(84, 98, 151), 
+    #5b6a78,
+
+);
+
+:root {
+    .tema-claro {
+        --color-1: #{$color-1-claro};
+        --color-2: #{$color-2-claro};
+        --color-3: #{$color-3-claro};
+        --color-4: #{$color-4-claro};
+        --color-5: #{$color-5-claro};
+    }
+    .tema-oscuro{
+        --color-1:  #{nth($colores-oscuros,1)};
+        --color-2:  #{nth($colores-oscuros,2)};
+        --color-3:  #{nth($colores-oscuros,3)};
+        --color-4:  #{nth($colores-oscuros,4)};
+        --color-5:  #{nth($colores-oscuros,5)};
+      }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(var(--color-4), var(--color-5));
+
+}
+
+@import "partials/header";
+
+@import "partials/menu";
+
+@import "partials/boton";
+
+@import "partials/footer";
+
+@import "partials/contenido";
+@import "partials/contacto";
+
+@import "partials/boton";
+
+
+
