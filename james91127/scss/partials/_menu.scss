@@ -1,0 +1,22 @@
+header{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--color-3);
+    background-color: var(--color-2);
+    width: 70%;
+    position:sticky;
+    top: 0px;
+    left: 15%;
+   border-radius: 15px;
+}
+
+
+.foto{
+    width: 90px;
+    height: 90px;
+    margin-top: 1%;
+    margin-left: 12%;
+    margin-right: 12%;
+    float: left;
+    border-radius: 50%;
+}
