@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Vogue';
+    src: url(letra/Vogue.ttf);
+}
+
+// .enConstruccion img{
+//    width: 50%;
+//     @if $debug==false{
+//         display: none;;
+//     }@else{
+//         display: inline;
+
+//     }
+// }
+#contenido {
+    background-color: var(--color-4);
+    position: relative;
+    height: 1500px;
+
+}
+// **********Caja de la zona izquierda**************************
+#cajaIzquierda {
+
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    height: 100%;
+
+    img {
+        position: relative;
+        left: 35%;
+        top: 1%;
+        width: 45%;
+        height: 15%;
+        z-index: 2;
+        border-radius: 80%;
+        border: 2px solid var(--color-3);
+    }
+
+    #contenedorLateral {
+        position: relative;
+        left: 10%;
+        height: 70%;
+        width: 95%;
+        top: -6%;
+        background-color: var(--color-1);
+        border: 1px solid black;
+        box-shadow: 0px 1px 7px lightgray;
+        padding-top: 30%;
+        padding-left: 5%;
+        div {
+            margin-top: 5%;
+        
+            h7 {
+                font-weight: bold;
+                margin-left: 10%;
+            }
+        }
+        #tituloPrincipal {
+            text-align: center;
+
+            h2 {
+                // color: rgb(94, 8, 131);
+                color: var(--color-3);
+                text-shadow: 0px 2px 3px gray;
+            }
+        }
+
+        #TablaDatosLateral td {
+            padding-left: 15%;
+     
+
+        }
+
+
+        #idLenguajes {
+            width: 90%;
+            text-align: left;
+            margin-left: 15%;
+            margin-top: 2%;
+
+            td>div {
+                margin-left: 5%;
+            }
+        }
+
+        #cajaSkills {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            flex-wrap: wrap;
+            margin-bottom: 15%;
+            margin-top: 5%;
+
+            .circle-wrap {
+                margin-left: 9%;
+                width: 24%;
+            }
+        }
+
+        #botonCV {
+            background-color: var(--color-3);
+            width: 70%;
+            height: 7%;
+            margin-top: 10%;
+            margin-left: 15%;
+            border-color: transparent;
+            box-shadow: 1px 2px 3px black;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+// **********Cajas de la zona derecha**************************
+.cajaDerecha {
+    float: left;
+    width: 70%;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-top: 1%;
+
+    h4 {
+        color: var(--color-3);
+        font-family: 'Vogue';
+        width: fit-content;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .cajaPeriodistica {
+        width: fit-content;
+        columns: 2;
+        column-width: 40%;
+        column-rule: 3px solid #e9a8dc;
+        column-gap: 20%;
+        padding-left: 4%;
+    }
+
+    .cajaServ {
+        width: 40%;
+        height: 70%;
+        float: left;
+        background-color: var(--color-1);
+        padding-left: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        box-shadow: 0px 1px 7px lightgray;
+        border: 1px solid black;
+
+        img {
+            width: 20%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        p {
+            width: 75%;
+            display: inline-block;
+        }
+    }
+
+    .circulo {
+        display: inline-block;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+        width: 15%;
+        height: 160px;
+        border-radius: 90%;
+        background-color: var(--color-5);
+
+        img {
+            width: map-get($tamanios-iconos-horizontal , 'grande');
+            height: map-get($tamanios-iconos-vertical , 'grande');
+        }
+    }
+
+
+}

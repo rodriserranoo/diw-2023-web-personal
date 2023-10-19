@@ -1,14 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>    
-  </head>
-  <body class="tema-claro">
-    <header></header>
-    <main>
-      <p>Enhorabuena tu repositorio personal funciona correctamente ......</p>
-    </main>    
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Mi | Carolain Maccha</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="css-circular-prog-bar.css" rel="stylesheet">
+  <script src="./js/javascript.js" defer></script>
+</head>
+
+<body class="tema-claro">
+  <!-- <p class="enConstruccion"><img src="img/wave.svg" alt=""></p> -->
+  <header id="menu">
+    <img src="iconos/CGMM.png" alt="Logo">
+    <nav>
+      <a href="/html/">Inicio</a> |
+      <a href="#">Sobre mí</a> |
+      <a href="/js/">Servicios</a> |
+      <a href="/python/">Contáctame</a>
+        <label class="switch-5">
+          <input type="checkbox" id="toggleTheme" />
+          <span class="slider-5"></span>
+        </label>
+  
+    </nav>
+  </header>
+  <main id="contenido">
+    
+    <section id="cajaIzquierda">
+      <img src="iconos/fotocvcarolain.png" alt="imagen de mi">
+      <div id="contenedorLateral">
+        <div id="tituloPrincipal">
+          <h2>Carolain Maccha Masabel</h2>
+          <p>Web Developer</p>
+        </div>
+        <div>
+          <table id="TablaDatosLateral">
+            <tr>
+              <td>Edad:</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>Ubicación:</td>
+              <td>Madrid</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h7>LENGUAJES</h7>
+          <table id="idLenguajes">
+            <tr>
+              <td>Inglés</td>
+              <td>
+                <div class="w3-light-grey w3-round " style="height: 10px;width: 100px;">
+                  <div class="w3-container w3-round w3-purple" style="width:80%;height: 10px;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Francés</td>
+              <td>
+                <div class="w3-light-grey w3-round " style="height: 10px;width: 100px;">
+                  <div class="w3-container w3-round w3-purple" style="width:20%;height: 10px;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Italiano</td>
+              <td>
+                <div class="w3-light-grey w3-round " style="height: 10px;width: 100px;">
+                  <div class="w3-container w3-round w3-purple" style="width:80%;height: 10px;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Español</td>
+              <td>
+                <div class="w3-light-grey w3-round " style="height: 10px;width: 100px;">
+                  <div class="w3-container w3-round w3-purple" style="width:100%;height: 10px;"></div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h7>SKILLS</h7>
+          <div id="cajaSkills">
+          <div class="circle-wrap">
+            <div class="progress-circle p100">
+              <span>HTML</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="circle-wrap">
+            <div class="progress-circle p100">
+              <span>CSS</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="circle-wrap">
+            <div class="progress-circle p85">
+              <span>SQL</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="circle-wrap">
+            <div class="progress-circle p90">
+              <span>JS</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="circle-wrap">
+            <div class="progress-circle p95">
+              <span>JAVA</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+        </div>
+        <button id="botonCV"><a href="#">DESCARGAR CV</a></button>
+
+      </div>
+    </section>
+
+    <section class="cajaDerecha">
+      <h4>Sobre mí</h4>
+      <p>Estudiante de Grado Superior de Desarrollo de Aplicaciones Web.
+        Busco empresa relacionada a la informática.<br> Demuestro mi compromiso con desarollarme profesionalmente y explotar
+        mis conocimientos en
+        cualquier área que se solicite.
+      </p>
+
+
+      <h4>Formación Academica</h4>
+      <div class="cajaPeriodistica">
+        <h7> IES VILLABLANCA | 2020-2022</h7>
+        <p>Grado medio de sistemas microinformáticos y redes
+        </p>
+        <h7>PHONBWOY</h7>
+        <p>Master reparación de móviles y tablets </p>
+        <h7>SAMSUNG | Universidad de Alcalá de hernares</h7>
+        <p>Front-end:Css,Html,Php,Javascript</p>
+        <h7>CISCO</h7>
+        <p>It essentials,Networking essentials.</p>
+
+      </div>
+      <h4>Experiencia</h4>
+      <div class="cajaPeriodistica">
+        <h7> MUNDO DEL MÓVIL | ENERO-DICIEMBRE 2017</h7>
+        <p> Técnico de reparación de móviles y tablets.
+        <ul>
+          <li>reparación hardware y software de telefonos móviles</li>
+          <li>Asesoramiento de clientes en el mantenimiento hardware.</li>
+        </ul>
+        </p>
+        <h7>FREDDY S.L. | AGOSTO-DICIEMBRE 2018</h7>
+        <p>Técnico de reparación de móviles y tablets.
+        <ul>
+          <li>Solución de problemas software,hardware de móviles.</li>
+          <li>Microsoldadura de componentes electrónicos.</li>
+        </ul>
+
+        </p>
+        <h7>CTDI S.L.| MAYO-AGOSTO 2020</h7>
+        <p> Técnico de reparación móviles.
+        <ul>
+          <li>Ensamblaje de piezas electrónicas.</li>
+          <li>Microsoldadura de componentes electrónicos</li>
+          <li>Pruebas de funcionamiento equipos electrónicos</li>
+          <li>Montaje de telefonos Samsung.Puesto a nuevo</li>
+        </ul>
+        </p>
+        <h7>Oesía S.L.</h7>
+        <p>
+        <ul>
+          <li>Ensamblaje de piezas electrónicas.</li>
+          <li>Microsoldadura de componentes electrónicos</li>
+        </ul>
+        </p>
+      </div>
+
+    </section>
+
+    <section class="cajaDerecha cajaServicios">
+      <h4>Servicios</h4>
+        <div class="cajaServ">
+          <img src="iconos/codigo.png" alt="DesWeb">
+          <p>Desarrollo web</p>
+        </div>
+        <div class="cajaServ">
+          <img src="iconos/codigo.png" alt="ReparacionMovil">
+          <p>Técnico reparación móviles</p>
+        </div>
+        <div class="cajaServ">
+          <img src="iconos/sistemas.png" alt="TecnicoSistemas">
+          <p>Técnico Sistemas microinformáticos</p>
+        </div>
+        <div class="cajaServ">
+          <img src="iconos/codigo.png" alt="TecnicoRedes">
+          <p>Técnico de Redes</p>
+        </div>
+    </section>
+    <section class="cajaDerecha cajaHobbies">
+      <h4>Hobbies</h4>
+      <div class="circulo"> <img src="iconos/leer.png" alt="lectura"></div>
+      <div class="circulo"> <img src="iconos/bailar.png" alt="bailar"></div>
+      <div class="circulo"> <img src="iconos/viajar.png" alt="viajar"></div>
+    </section>
+
+  </main>
+  <footer id="idFooter">
+    <div id="idRedes">
+      <a href="#"><img src="iconos/correos-electronicos.png" alt="Correo"></a>
+      <a href="#"> <img src="iconos/llamar.png" alt="Telefono"></a>
+      <a href="#"> <img src="iconos/in.jpg" alt="LinkedIn"></a>
+      <a href="#"><img src="iconos/github.png" alt="Github"></a>
+    </div>
+    <cite>@2023| Todos los derechos reservados</cite>
+  </footer>
+</body>
+
 </html>
