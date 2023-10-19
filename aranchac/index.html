@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>    
-  </head>
-  <body class="tema-claro">
-    <header></header>
-    <main>
-      <p>Enhorabuena tu repositorio personal funciona correctamente ......</p>
-    </main>    
-  </body>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="./css/miWeb.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous"
+      />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+        <script src="./js/javascript.js" defer></script>
+    </head>
+
+    <body class="tema-claro">
+        <header>
+            <!--<div class="foto"></div>-->
+            <!-- <img src="fotoheader2.png" class="foto"> -->
+            <div class="headerIzq">
+                <h1>ARANCHA CHICHARRO MONTEJANO</h1>
+            </div>
+            <div class="headerDer">         
+                <h2>Programadora Web</h2>
+                <h2>Agente de Viajes</h2>
+                <h2>Organizadora de Eventos</h2>
+            </div>
+            
+        </header>
+
+        <nav class="menu">
+			<a>INICIO</a>
+			<a>EXPERIENCIA</a>
+			<a>FORMACIÓN</a>
+            <a>AFICIONES</a>
+            <a>CONTACTO</a>
+            <label class="switch-5">
+                <input type="checkbox" name="modo" id="toggleTheme" />
+                <span class="slider-5"></span>
+            </label>
+		</nav>
+
+        <main>
+            <article class="inicio">
+                <!-- <img src="fotoinicio.png" alt=""> -->
+                <h3 class="h3izq">¡ Hola soy Arancha !<br/>Esta es mi web.</h3>
+                <img src="fotos/foto1.png" alt="">
+                <h3 class="h3der">Tengo 31 años y <br/>vengo de Vallecas, Madrid.</h3>
+            </article>
+
+            <article>
+
+                <section class="experiencia">
+                    <h2>EXPERIENCIA</h2>
+                </section>
+
+                <section class="formacion">
+                    <h2>FORMACIÓN</h2>
+                </section>
+
+                <section class="aficiones">
+                    <h2>AFICIONES</h2>
+                    <div class="icons">
+                        <img src="iconosBody/viaje.png" alt="">
+                        <img src="iconosBody/cine.png" alt="">
+                        <img src="iconosBody/rock.png" alt="">
+                        <img src="iconosBody/harrypotter.png" alt="">                        
+                        <img src="iconosBody/darth-vader.png" alt="">                       
+                    </div>
+                    <div class="icons">
+                        <img src="iconosBody/amistad.png" alt="">
+                        <img src="iconosBody/montana.png" alt="">
+                        <img src="iconosBody/playa.png" alt="">
+                        <img src="iconosBody/restaurante.png" alt="">
+                        <img src="iconosBody/casa.png" alt="">
+                        
+                    </div>
+                </section>
+
+                <section class="contacto">
+                    <h2>CONTACTO</h2>
+                    <form action="#">
+                        <textarea name="campo" id="" cols="70" rows="9"></textarea>
+                        <input type="nombre" name="nombre" placeholder="Nombre" /><br/>
+                        <input type="email" name="email" placeholder="Correo electrónico" /><br/>
+                        <input type="submit" name="enviar" value="Enviar" />
+                        <img src="iconosBody/contact.png" alt="">
+                    </form>
+                </section> 
+
+            </article>
+        </main>
+
+        <footer>
+            <img src="iconosFooter/brand-linkedin.svg">
+            <img src="iconosFooter/brand-github-filled.svg">
+            <img src="iconosFooter/brand-gmail.svg">
+            <img src="iconosFooter/brand-x.svg">
+            <img src="iconosFooter/brand-facebook-filled.svg">
+            <img src="iconosFooter/brand-instagram.svg">
+        </footer>
+
+        
+    </body>
+
 </html>
