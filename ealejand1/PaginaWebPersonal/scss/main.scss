@@ -1,0 +1,43 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+$color1-claro: #ff0000;
+$color2-claro: #faf3eb;
+$color3-claro: #deb887;
+$color4-claro: #F4E0B9;
+$color5-claro: #000;
+
+$colores-oscuros: (
+    #040D12,
+    #183D3D,
+    #5C8374,
+    #93B1A6,
+    #b4b4b4,
+);
+
+
+
+:root {
+    .tema-claro{
+        --color-1:  #{$color1-claro};
+        --color-2:  #{$color2-claro};
+        --color-3:  #{$color3-claro};
+        --color-4:  #{$color4-claro};
+        --color-5:  #{$color5-claro};
+
+    }
+    .tema-oscuro{
+        --color-1:  #{nth($colores-oscuros,1)};
+        --color-2:  #{nth($colores-oscuros,2)};
+        --color-3:  #{nth($colores-oscuros,3)};
+        --color-4:  #{nth($colores-oscuros,4)};
+        --color-5:  #{nth($colores-oscuros,5)};
+    }
+}
+
+
+@import './Partial/menu';
+@import './Partial/body';
+@import './Partial/footer';

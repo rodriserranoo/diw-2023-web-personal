@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>    
-  </head>
-  <body class="tema-claro">
-    <header></header>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal</title>
+    <link rel="stylesheet" href="./PaginaWebPersonal/css/main.css"/>
+    <script src="./PaginaWebPersonal/js/Boton.js"></script>
+</head>
+<body class="tema-claro">
+    <header class="menu">
+        <nav>
+            <input type="checkbox" onclick="cambiarTema()">
+            <div class="cajas">
+                Inicio
+            </div>
+            <div class="cajas">
+                Autor
+            </div>
+            <div class="cajas">
+                Sobre mi
+            </div>
+            
+        </nav>
+    </header>
     <main>
-      <p>Enhorabuena tu repositorio personal funciona correctamente ......</p>
-    </main>    
-  </body>
+        <div id="idCaja1">
+            <div id="idInformacion">
+                <h2 class="titulos1">Erik Alejandro Quezada</h2>
+                <h8 class="titulos2">Estudiante DAW</h8>
+                <p class="textoColumna">hola buenas tardes</p>
+            </div>
+            <div id="idCajaFoto">
+                <img src="./PaginaWebPersonal/Imagenes/fotoPerf1.jpg" alt="fotoPerfil" class="FotoPerfil">
+            </div>
+        </div>
+
+        <div class="cajaInfo">
+            <div class="cajaForma">
+                <h4 class="titulos2">Formacion Academica</h4>
+                <div class="cajaF">
+                    Colegio J.H.NEWMAN (ESO) 2013-2017
+                </div>
+                <div class="cajaF">
+                    CampusFPAtocha (G.S Animacion 3D) 2019-2022
+                </div>
+                <div class="cajaF">
+                    I.E.S Francisco de Quevedo (Bachillerato Ciencias)2017-2019
+                </div>
+                <div class="cajaF">
+                    I.E.S Franscisco de Goya(estudiante de G.S de D.A.W)2023-actual 
+                </div>
+                </div>
+                <div class="cajaSkills">
+                    <h1>Skills</h1>
+            </div>
+        </div>
+        
+
+        <div class="cajaAficiones">
+            <h4 class="titulos2">Aficiones</h4>
+            <img src="./PaginaWebPersonal/Imagenes/1aficion.jpg" alt="concierto" class="fotosAf">
+            <img src="./PaginaWebPersonal/Imagenes/2aficion.jpg" alt="viendo series" class="fotosAf2">
+            <img src="./PaginaWebPersonal/Imagenes/3aficion.jpeg" alt="amigos" class="fotosAf">
+            <img src="./PaginaWebPersonal/Imagenes/4aficion.jpeg" alt="amigos" class="fotosAf2">
+        </div>
+
+        
+    </main>
+    <footer >
+        <button class="boton" type="button"><img src="./PaginaWebPersonal/Imagenes/3.png" alt="github_button" width="30px" height="30px"></button>
+        <button class="boton" type="button"><img src="./PaginaWebPersonal/Imagenes/1.png" alt="gmail_button" width="30px" height="30px"></button>
+        <button class="boton" type="button"><img src="./PaginaWebPersonal/Imagenes/2.jpg" alt="github_button" width="30px" height="30px"></button>
+        <h6 class="textoarroba">@erikalejandro</h6>
+    </footer>
+</body>
 </html>

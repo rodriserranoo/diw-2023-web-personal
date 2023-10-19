@@ -1,0 +1,31 @@
+p.primero.segundo{
+    background-color: blueviolet;
+}
+/*
+section.primero{
+    background-color: chartreuse;
+}*/
+
+/* #paco{
+     color: forestgreen;
+} */
+   
+
+p#paco{
+    color: rgb(140, 0, 255);
+}
+
+.primero span{
+    color: rgb(248, 224, 11);
+}
+
+.primero > span{
+    color:deepskyblue;
+}
+
+p:not(.azul){
+    color: blue;
+}
+p:last-child{
+    color: blueviolet;
+}
