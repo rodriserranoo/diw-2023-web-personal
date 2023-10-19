@@ -1,0 +1,174 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*////////////////////////////////////////////////////*/
+:root .tema-claro {
+  --color-1: #AD8B73;
+  --color-2: #8000FF;
+  --color-3: #f2f2f2;
+  --color-4: #CEAB93;
+  --color-5: #AD8B73;
+  --color-letra: #000000;
+}
+:root .tema-oscuro {
+  --color-1: #222831;
+  --color-2: #34495E;
+  --color-3: #CCD1D1;
+  --color-4: #393E46;
+  --color-5: #222831;
+  --color-5: #222831;
+  --color-letra: #FFFFFF;
+}
+
+/*////////////////////////////////////////////////////*/
+.menu {
+  display: inline-block;
+  width: 33%;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  top: 0px;
+  position: sticky;
+  z-index: 10;
+  display: inline-block;
+}
+
+h1 {
+  background-color: var(--color-1);
+  color: var(--color-letra);
+  border-radius: 100px;
+  /* top: 5%; */
+  width: 30%;
+  height: auto;
+  text-align: center;
+  position: relative;
+}
+
+ul {
+  background-color: var(--color-5);
+  width: 100%;
+}
+
+li {
+  text-align: center;
+  margin-left: 2%;
+  width: 14%;
+  display: inline-block;
+}
+
+img {
+  width: 40%;
+}
+
+footer {
+  width: 100%;
+  height: 100;
+  position: relative;
+  background-color: blue;
+}
+
+/*////////////////////////////////////////////////////*/
+.slider-container {
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.nav-buttons {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#id_btn {
+  text-align: center;
+}
+
+.prev,
+.next {
+  margin: 10px;
+  z-index: 1;
+}
+
+/*////////////////////////////////////////////////////*/
+.c_desplegable {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.cabecera {
+  background-color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contenido {
+  display: none;
+  padding: 10px;
+}
+
+/*////////////////////////////////////////////////////*/
+body {
+  background-image: url(Windows_10_Cloud_Hero.jpg);
+}
+
+main {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin-left: 10%;
+  width: 80%;
+}
+
+article {
+  background-color: var(--color-2);
+  text-align: center;
+  height: auto;
+  border: 3px solid #000;
+}
+
+.c_desplegable {
+  margin-top: 3%;
+  background-color: var(--color-4);
+}
+
+/*# sourceMappingURL=main.css.map */

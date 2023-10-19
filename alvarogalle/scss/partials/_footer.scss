@@ -1,0 +1,22 @@
+ul{
+    background-color: var(--color-5);
+    width: 100%;
+}
+
+li{
+    text-align: center;
+    margin-left: 2%;
+    width: 14%;
+    display: inline-block;
+}
+
+img{
+    width: map-get($tamanios-iconos-horizontal , 'medio' );
+}
+footer{
+    width: 100%;
+    height: 100;
+    position: relative;
+    background-color: blue
+    
+} 
