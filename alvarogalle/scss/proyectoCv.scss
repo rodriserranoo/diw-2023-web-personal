@@ -1,0 +1,67 @@
+
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/*////////////////////////////////////////////////////*/
+
+$color-1-claro: #AD8B73;
+$color-2-claro: #8000FF;
+$color-3-claro: #f2f2f2;
+$color-4-claro: #CEAB93;
+$color-5-claro: #AD8B73;
+$color-letra-claro: #000000;
+
+$colores-oscuros : (
+  #222831,
+  #34495E,
+  #CCD1D1,
+  #393E46,
+  #222831,
+  #FFFFFF
+);
+
+
+:root {
+  .tema-claro{
+  --color-1:  #{$color-1-claro};
+  --color-2:  #{$color-2-claro};
+  --color-3:  #{$color-3-claro};
+  --color-4:  #{$color-4-claro};
+  --color-5:  #{$color-5-claro};
+  --color-letra: #{$color-letra-claro};
+  }
+  .tema-oscuro{
+    --color-1:  #{nth($colores-oscuros,1)};
+    --color-2:  #{nth($colores-oscuros,2)};
+    --color-3:  #{nth($colores-oscuros,3)};
+    --color-4:  #{nth($colores-oscuros,4)};
+    --color-5:  #{nth($colores-oscuros,5)};
+    --color-5:  #{nth($colores-oscuros,5)};
+    --color-letra:  #{nth($colores-oscuros,6)};
+  }
+} 
+
+/*////////////////////////////////////////////////////*/
+
+$tamanios-iconos-horizontal : (
+ 'pequenio':20%, 
+ 'medio':40%,
+ 'grande':60%
+);
+
+
+@import "./partials/menu";
+@import "./partials/footer";
+@import "./partials/main";

@@ -1,0 +1,25 @@
+.menu {
+    display: inline-block;
+    width: 33%;
+  }
+  
+  header {
+    width: 100%;
+    height: auto;
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+    display: inline-block;
+  }
+  
+  h1 {
+    background-color: var(--color-1);
+    color: var(--color-letra);
+    border-radius: 100px;
+    /* top: 5%; */
+    width: 30%;
+    height: auto;
+    text-align: center;
+    position: relative;
+  }
+  

@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indice</title>    
-  </head>
-  <body class="tema-claro">
-    <header></header>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>AlvaroGallego</title>
+    <script src="proyectoCv.js" defer></script>
+</head>
+<body class="tema-claro">
+    <header id="hola">
+        <h1 class="menu c_nombre">Alvaro</h1>
+         <h1 class="menu c_foto">FOTO</h1> 
+        <h1 class="menu c_apell">Gallego</h1>
+    </header>                                                                         
     <main>
-      <p>Enhorabuena tu repositorio personal funciona correctamente ......</p>
-    </main>    
-  </body>
+        <!-- <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="imagen1.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="imagen2.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="imagen3.jpg" alt="Imagen 3"></div>
+                 Agrega más imágenes según sea necesario 
+            </div>
+        
+            <button class="prev" onclick="changeSlide(-1)">Anterior</button>
+            <button class="next" onclick="changeSlide(1)">Siguiente</button>
+        </div> -->
+        
+        
+
+        <section class="slider-container">
+            <div class="slider">
+                <article class="slide">
+                    <p>Esta es la información del primer slide.</p>
+                </article>
+                <article class="slide">
+                    <p>Esta es la información del segundo slide.</p>
+                </article>
+                <article class="slide">
+                    <p>Esta es la información del tercer slide.</p>
+                </article>
+            </div>
+            <div id="id_btn">
+                <button class="prev" onclick="changeSlide(-1)"><</button>
+                <button class="next" onclick="changeSlide(1)">></button>
+            </div>
+            <input type="checkbox" id="toggleTheme" >Cambiar Tema
+        </section>
+        
+        
+        <section class="c_desplegable">
+            <div class="tarjeta">
+                <div class="cabecera" onclick="toggleCard(1)">
+                    <h2>Tarjeta Desplegable 1</h2>
+                </div>
+                <div class="contenido" id="contenido_1">
+                    <p>Esta es la información que se mostrará u ocultará.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cabecera" onclick="toggleCard(2)">
+                    <h2>Tarjeta Desplegable 2</h2>
+                </div>
+                <div class="contenido" id="contenido_2">
+                    <p>Esta es la información que se mostrará u ocultará.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="cabecera" onclick="toggleCard(3)">
+                    <h2>Tarjeta Desplegable 3</h2>
+                </div>
+                <div class="contenido" id="contenido_3">
+                    <p>Esta es la información que se mostrará u ocultará.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <img src="img/linkedin.png" alt="linkedin">
+                <a href="https://es.linkedin.com/?src=go-pa&trk=sem-ga_campid.18146679037_asid.140850334975_crid.619061882347_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1005493&mcid=6968657504633266178&cid=&gclid=CjwKCAjwyNSoBhA9EiwA5aYlb5xI5y-lGwZ5rhqXeiIYa2iqFV_K2kYGduy8823Kk7vuffbSgffIvxoCT1IQAvD_BwE&gclsrc=aw.ds" title="Linkedin"></a>
+            </li>
+
+            <li>
+                <img src="img/phone-call.png" alt="telefono">
+                <a href="" title="Telf"></a>
+            </li>
+
+            <li>
+                <img src="img/gmail.png" alt="gmail">
+                <a href="https://www.google.com/intl/es/gmail/about/" title="Correo"></a>
+            </li>
+
+            <li>    
+                <img src="img/twitter.png" alt="X (twitter)">
+                <a href="https://twitter.com/?lang=es" title="X"></a>
+            </li>
+
+            <li>
+                <img src="img/Instagram_logo_2022.svg" alt="instagram">
+                <a href="https://www.instagram.com/" title="Instagram"></a>
+            </li>
+
+            <li>
+                <img src="img/github.png" alt="github">
+                <a href="https://github.com/" title="GitHub"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
 </html>
