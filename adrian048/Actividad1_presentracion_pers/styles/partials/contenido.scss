@@ -1,0 +1,98 @@
+.datos{
+    height: 350px;
+    width: 90%;
+    text-align: center;
+    margin: 7%;
+}
+.foto{
+    margin: 0;
+    height: 100%;
+    float: left;
+    width: 39%;
+}
+.dato{
+    margin: 0;
+    background-color: var(--color-2);
+    margin: 1%;
+    float: left;
+    width: 28.5%;
+    max-width: 28.5%;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-height: 450px;
+    margin-bottom: 10%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.slider-container2 {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-height: 450px;
+    padding-bottom: 10%;
+}
+
+.slide2 {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #bebebe;
+    color: #000000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
