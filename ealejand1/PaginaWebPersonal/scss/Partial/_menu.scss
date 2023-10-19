@@ -1,0 +1,16 @@
+.menu{
+    background-color: var(--color-3);
+    height: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.cajas {
+    position: relative;
+    left: 30%;
+    display: inline-block;
+    width: 10%;
+    margin-top: 15px;
+    border-left:3px solid var(--color-5);
+}
