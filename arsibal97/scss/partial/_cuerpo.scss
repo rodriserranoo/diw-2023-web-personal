@@ -1,0 +1,163 @@
+main{
+    background-color:var(--color-1);
+    position: relative;
+    width: 100%;
+    height: 1700px;
+  }
+  .sec1{
+    position: relative;
+   
+    float: left;
+    width: map-get($tamanio-horizontal-porcentaje , "xxs" );
+    height: 1500px;
+
+    .art11 {
+      position: absolute;
+      width: map-get($tamanio-horizontal-porcentaje , "l" );
+      height: 540px;
+      top: 450px;
+      left: 100px;
+    
+  
+
+    }
+     .art12 {
+      position: absolute;
+      
+      width: map-get($tamanio-horizontal-porcentaje , "l" );
+      height: 540px;
+      top: 1100px;
+      left: 100px;
+  
+  
+    }
+  }
+  .sec2{
+    position: relative;
+
+    float: left;
+    width: map-get($tamanio-horizontal-porcentaje , "xs" );
+    height: 1500px;
+    
+    .art21 {
+      position: absolute;
+     
+      width: map-get($tamanio-horizontal-porcentaje , "m" );
+      height: 570px;
+      top: 150px ;
+      left: 90px;
+      div.foto{
+        background-color:var(--color-6);
+        position: relative;
+        width: map-get($tamanio-horizontal-porcentaje , "xxl" );
+        height: 570px;
+        box-shadow: 10px 10px 15px rgb(109, 109, 109);
+        div.retrato{
+          position: absolute;
+          background-color: var(--color-5);
+          border-radius: 10%;
+          width: map-get($tamanio-horizontal-porcentaje , "xl" );
+          height: 424px;
+          top: 20px;
+          left: 28px;
+          img{
+            width: map-get($tamanio-horizontal-porcentaje , "xxl" );
+            height: 112%;
+      
+          }
+        }
+
+
+      }
+  
+  
+    } 
+     .art22 {
+      position: absolute;
+      
+      width: map-get($tamanio-horizontal-porcentaje , "s" );
+      height: 500px;
+      top: 750px;
+      left: 109px;
+  
+  
+    } 
+  }
+  .sec3{
+    position: relative;
+   
+    float: left;
+    width: map-get($tamanio-horizontal-porcentaje , "xxs" );
+    height: 1500px;
+
+  }
+ 
+  div.ma{
+    background-color: var(--color-5);
+    position: relative;
+    border-radius: 60px;
+    border: 3px solid black;
+    width: map-get($tamanio-horizontal-porcentaje , "xxl" );
+  height: 540px;
+
+}
+  div.c{
+    background-color: var(--color-3);
+    position:absolute;
+    top: 47px;
+    left: 29px;
+    width: map-get($tamanio-horizontal-porcentaje , "l" );
+    height: 443px;
+    border-radius: 60px;
+    box-shadow: 2px 5px 10px black;
+    transition: transform 0.2s;
+  }
+  .c:active{
+    transform: scale(0.95);}
+
+   .sec3  .art31 {
+    position: absolute;
+  
+    width:map-get($tamanio-horizontal-porcentaje , "l" );
+    height: 540px;
+    top: 450px;
+    left: -30px;
+
+
+  } .sec3  .art32 {
+    position: absolute;
+   
+    width:map-get($tamanio-horizontal-porcentaje , "l" );
+    height: 540px;
+    top: 1100px;
+    left: -30px;
+
+
+  }
+  
+  
+  div.mrespuesta{
+    position: relative;
+    
+    width: map-get($tamanio-horizontal-porcentaje , "xxl" );
+    height: 530px;
+    background-color: var(--color-4);
+    border-radius: 60px;
+
+  }
+
+  div.respuesta{
+    position: absolute;
+    top: 28px;
+    left: 38px;
+    width:map-get($tamanio-horizontal-porcentaje , "l" );
+    height: 478px;
+    background-color: var(--color-3);
+  
+    border-radius: 60px;
+
+  }
+  .i{
+    width: map-get($tamanio-horizontal-porcentaje , "xxl" );
+    height: 100%;
+  }

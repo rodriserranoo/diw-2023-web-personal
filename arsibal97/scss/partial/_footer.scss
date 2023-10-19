@@ -1,0 +1,31 @@
+.pies {
+    display: block;
+    height: 120px;
+    width: 100%;
+    background-color:var(--color-1);
+    text-align: center;
+
+  }
+div.b{
+    display: inline-block;
+    position: relative;
+    background-color: red;
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    z-index: 1;
+    margin: 10px 100px;
+    
+
+  }
+  div.mb{
+    background-color: var(--color-5);
+    position: absolute;
+    border: 1px solid black;
+    top:5px;
+    left: 5px;
+    width: 86%;
+    height: 87%;
+    border-radius: 60px;
+  }
