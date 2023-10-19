@@ -1,0 +1,51 @@
+
+/* ╔════════════════•°♥ Pies ♥°•═══════════════╗ */
+#idredes{
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.redes{
+    margin: 10px;
+    background-color: var(--color-2);
+}
+#idinstagram{
+    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/instagram.png);
+}
+#idcorreo{
+    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/gmail.png);
+}
+#idpie{
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-3);
+    text-align: center;
+}
+#idcontLogo{
+    display: inline-block;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+#idlogo{
+    display: inline-block;
+    background-size: cover;
+    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/logo.png);
+    width: 60px;
+    height: 60px;
+}
+#idnombreLogo{
+    position: relative;
+    bottom: 15px;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    color: var(--color-2);
+}
+/* ╚═══════════•°♥ Fin pies ♥°•═══════════╝ */
