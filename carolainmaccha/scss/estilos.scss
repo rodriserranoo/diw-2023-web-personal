@@ -1,0 +1,72 @@
+// sass --watch scss/estilos.scss css/main.css
+
+$color-1-claro: #C1AAF2;
+$color-2-claro: #A9D6FF;
+$color-3-claro: #8e2ebb;
+$color-4-claro: white;
+$color-5-claro: #fdbaec;
+
+
+$colores-oscuros : (
+  rgb(110, 46, 145),
+  #3f668b,
+  rgba(228, 207, 241, 0.849),
+  #8c64a7,
+  #f5caea
+);
+
+$tamanios-iconos-horizontal : (
+'muyPequenio':10%,
+'pequenio':40%,
+'medio':75%,
+'grande':100%,
+);
+
+$tamanios-iconos-vertical : (
+'muyPequenio':10%,
+'pequenio':40%,
+'medio':75%,
+'grande':100%,
+);
+
+/*MODO DEBUG*/
+//VER EL IF EN EL PARTIAL PRINCIPAL (contenido)
+// $debug:true;
+
+:root {
+    .tema-claro{
+    --color-1:  #{$color-1-claro};
+    --color-2:  #{$color-2-claro};
+    --color-3:  #{$color-3-claro};
+    --color-4:  #{$color-4-claro};
+    --color-5:  #{$color-5-claro};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+    }
+  } 
+@import "partials/_boton.scss";
+@import "partials/_menu.scss";
+@import "partials/_contenido.scss";
+@import "partials/_footer.scss";
+
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
+}

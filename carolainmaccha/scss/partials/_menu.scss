@@ -1,0 +1,36 @@
+#menu {
+    background-color: var(--color-1);
+    width: 100%;
+    height: 130px;
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+    text-align: center;
+    padding-top: 45px;
+   
+    img {
+        display: inline-block;
+        width: map-get($tamanios-iconos-horizontal , 'muyPequenio');
+    }
+    nav {
+        display: inline-block;
+        width: 70%;
+        a {
+            display: inline-block;
+            width: 20%;
+            text-decoration: none;
+            font-style: italic;
+            font-size: large;
+            color: var(--color-3);
+            font-weight:bolder;
+        }
+        a:hover{
+            color:var(--color-4);
+            font-weight:bolder;
+            text-shadow: 2px 2px var(--color-3);
+        }
+    }
+}
+
+
+
