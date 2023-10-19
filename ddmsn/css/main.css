@@ -1,0 +1,143 @@
+.bodyy {
+  background-color: #6c6889;
+  color: white;
+}
+
+.menu {
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  z-index: 10;
+  width: 100%;
+  height: 80px;
+}
+
+.inicioo {
+  position: relative;
+  left: 5%;
+  padding: 5px;
+}
+
+.menu-partes {
+  position: absolute;
+  right: 5%;
+}
+
+.parte-menu {
+  display: inline-block;
+  padding: 5px;
+}
+
+.caja1 {
+  position: relative;
+  height: 250px;
+  width: 60%;
+  background-color: #32314e;
+  left: 20%;
+  text-align: center;
+  display: table;
+}
+
+.idmasc {
+  position: relative;
+  height: 250px;
+  width: 20%;
+  background-color: #21213b;
+  right: 0px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.fot {
+  position: absolute;
+  height: 100%;
+  width: 20vw;
+  background-image: url("dwayne-johnson-la-roca-sonrie.png");
+  background-position-x: -50px;
+  background-size: cover;
+  margin: auto;
+}
+
+.idnombre {
+  position: absolute;
+  top: 20%;
+  background-color: #21213b;
+  width: 30%;
+  height: 60%;
+  left: 40%;
+  text-align: center;
+}
+
+.caja2 {
+  position: relative;
+  height: 250px;
+  width: 60%;
+  background-color: #32314e;
+  left: 20%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form1 {
+  background-color: #21213b;
+  display: inline-block;
+  width: 25%;
+  padding: 50px;
+  margin: 7px;
+  margin-top: 60px;
+}
+
+.form2 {
+  background-color: #21213b;
+  display: inline-block;
+  width: 25%;
+  padding: 50px;
+  margin: 7px;
+  margin-top: 60px;
+}
+
+.caja3 {
+  position: relative;
+  height: 250px;
+  width: 60%;
+  background-color: #32314e;
+  left: 20%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cajafooter {
+  background-color: #32314e;
+  height: 50px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.foto {
+  width: 80px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("/imagenes/1.png");
+  margin: auto;
+}
+
+.foto2 {
+  width: 100px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("/imagenes/2.jpg");
+  margin: auto;
+}
+
+.foto3 {
+  width: 80px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("/imagenes/3.jpg");
+  margin: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+.menu{
+    background-color:transparent;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+
+    .inicioo{
+      position: relative;
+      left: 5%;
+      padding: 5px;
+     
+  
+  }
+  .menu-partes {
+      position: absolute;
+  right: 5%;
+  
+  .parte-menu{
+    display: inline-block;
+    padding: 5px;
+}
+  
+    }
+  }

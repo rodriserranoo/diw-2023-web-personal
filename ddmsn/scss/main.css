@@ -1,0 +1,194 @@
+:root .tema-claro {
+  --color-1: #32314e;
+  --color-2: #4e4c6b;
+  --color-3: #6c6889;
+  --color-4: #8a87a9;
+  --color-5: #aaa6ca;
+}
+:root .tema-oscuro {
+  --color-1: #00001a;
+  --color-2: #0c0c22;
+  --color-3: #13142a;
+  --color-4: #1a1a33;
+  --color-5: #21213b;
+}
+
+.menu {
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  z-index: 10;
+  width: 100%;
+  height: 80px;
+}
+.menu .inicioo {
+  position: relative;
+  left: 5%;
+  padding: 5px;
+}
+.menu .menu-partes {
+  position: absolute;
+  right: 5%;
+}
+.menu .menu-partes .parte-menu {
+  display: inline-block;
+  padding: 5px;
+}
+
+.caja1 {
+  position: relative;
+  height: 250px;
+  width: 60%;
+  background-color: #32314e;
+  left: 20%;
+  text-align: center;
+  display: table;
+}
+.caja1 .fot {
+  position: absolute;
+  height: 100%;
+  width: 20vw;
+  background-image: url("../imagenes/dwayne-johnson-la-roca-sonrie.png");
+  background-position-x: -50px;
+  background-size: cover;
+  margin: auto;
+}
+.caja1 .idnombre {
+  position: absolute;
+  top: 20%;
+  background-color: #21213b;
+  width: 30%;
+  height: 60%;
+  left: 40%;
+  text-align: center;
+}
+.caja1 .idmasc {
+  position: relative;
+  height: 250px;
+  width: 20%;
+  background-color: #21213b;
+  right: 0px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+}
+
+.caja2 {
+  position: relative;
+  height: 250px;
+  width: 60%;
+  background-color: #32314e;
+  left: 20%;
+  margin-top: 20px;
+  text-align: center;
+}
+.caja2 .form1 {
+  background-color: #21213b;
+  display: inline-block;
+  width: 25%;
+  padding: 50px;
+  margin: 7px;
+  margin-top: 60px;
+}
+.caja2 .form2 {
+  background-color: #21213b;
+  display: inline-block;
+  width: 25%;
+  padding: 50px;
+  margin: 7px;
+  margin-top: 60px;
+}
+
+.caja3 {
+  position: relative;
+  height: 250px;
+  width: 60%;
+  background-color: #32314e;
+  left: 20%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.caja3 .foto {
+  width: 80px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("../imagenes/1.png");
+  margin: auto;
+}
+.caja3 .foto2 {
+  width: 80px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("../imagenes/2.png");
+  margin: auto;
+}
+.caja3 .foto3 {
+  width: 80px;
+  height: 70px;
+  background-size: cover;
+  background-image: url("../imagenes/3.png");
+  margin: auto;
+}
+
+.cajafooter {
+  background-color: #32314e;
+  height: 80px;
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cajafooter .foot1 {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-image: url("../imagenes/twitter.png");
+  margin: auto;
+}
+.cajafooter .foot2 {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-image: url("../imagenes/facee.png");
+  margin: auto;
+}
+.cajafooter .foot3 {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-image: url("../imagenes/ins.png");
+  margin: auto;
+}
+
+button {
+  position: relative;
+  left: 5%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #21213b;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px #6c6889;
+}
+
+button:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #6c6889;
+}
+
+.bodyy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 1rem;
+  background-color: #6c6889;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

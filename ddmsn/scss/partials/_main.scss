@@ -1,0 +1,102 @@
+.caja1{
+
+    position: relative;
+    height: $heightcajas;
+    width: $widthcajas;
+    background-color: $color-oscuro;
+    left: $left;
+    text-align: center;
+    display: table;
+
+    .fot{
+        position: absolute;
+        height: 100%;
+        width: 20vw;
+        background-image: url('../imagenes/dwayne-johnson-la-roca-sonrie.png');
+        background-position-x:-50px  ;
+        background-size: cover;
+        margin: auto;
+    }
+    .idnombre{
+    position: absolute;
+    top:20%;
+    background-color:$color-claro;
+    width: 30%;
+    height: 60%;
+    left: 40%;
+    text-align: center;
+    }
+    .idmasc{
+    position: relative;
+    height: 250px;
+    width: 20%;
+    background-color:$color-claro;
+    right: 0px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    }
+
+
+}
+.caja2{
+    position: relative;
+    height: $heightcajas;
+    width: $widthcajas;
+    background-color: $color-oscuro;
+    left: $left;
+    margin-top: $margin-topcajas;
+    text-align: center;
+
+    .form1{
+        background-color: $color-claro;
+        display: inline-block;
+        width: $widthforms;
+       padding: $paddingforms;
+        margin: $marginforms;
+        margin-top: $margin-topforms;
+    }
+    .form2{
+        background-color: $color-claro;
+        display: inline-block;
+        width: $widthforms;
+        padding: $paddingforms;
+       margin: $marginforms;
+        margin-top: $margin-topforms;
+    }
+}
+.caja3{
+    position: relative;
+    height: $heightcajas;
+    width: $widthcajas;
+    background-color: $color-oscuro;
+    left: $left;
+    margin-top: $margin-topcajas; 
+    display: flex;
+    justify-content: center;
+
+    .foto{
+        width: $widthfoto;
+        height: $heightfoto;
+        background-size: cover;
+        background-image:url('../imagenes/1.png');
+        margin: auto;
+    }
+    
+    .foto2{
+        width: $widthfoto;
+        height: $heightfoto;
+        background-size: cover;
+        background-image: url('../imagenes/2.png');
+        margin: auto;
+    
+    }
+    .foto3{
+        width: $widthfoto;
+        height: $heightfoto;
+        background-size: cover;
+        background-image: url('../imagenes/3.png');
+        margin: auto;
+    }
+
+}

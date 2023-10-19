@@ -1,0 +1,79 @@
+$colores-claros : (
+  #32314e,
+  #4e4c6b,
+  #6c6889,
+  #8a87a9,
+  #aaa6ca
+);
+
+$colores-oscuros : (
+  #00001a,
+  #0c0c22,
+  #13142a,
+  #1a1a33,
+  #21213b
+
+);
+//VARIABLES COLORES
+$color-oscuro: #32314e;
+$color-claro:#21213b;
+//VARIABLES CAJAS
+$widthcajas:60%;
+$heightcajas:250px;
+$margin-topcajas:20px;
+$left:20%;
+//VARIABLES FOTOS
+$widthfoto: 80px;
+$heightfoto: 70px;
+//VARIABLES FORMS
+$widthforms: 25%;
+$paddingforms: 50px;
+$marginforms: 7px;
+$margin-topforms: 60px;
+
+
+$tamanios-iconos-horizontal : (
+ 'pequenio':40px, 
+ 'medio':60px,
+ 'grande':100px
+);
+
+$tamanios-iconos-vertical : (
+ 'pequenio':40px, 
+ 'medio':60px,
+ 'grande':100px
+);
+
+//map-get($tamanios-horizontal-fijo,"grande")
+
+:root {
+    .tema-claro{
+    --color-1: #{nth($colores-claros,1)};
+    --color-2: #{nth($colores-claros,2)};
+    --color-3: #{nth($colores-claros,3)};
+    --color-4: #{nth($colores-claros,4)};
+    --color-5: #{nth($colores-claros,5)};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+    }
+}
+
+
+@import 'partials/menu';
+@import 'partials/main';
+@import 'partials/footer';
+@import 'partials/boton';
+.bodyy{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 1rem;
+    background-color:  #6c6889
+    ;
+    color: white;
+}
+
