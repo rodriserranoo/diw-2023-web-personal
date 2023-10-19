@@ -1,0 +1,174 @@
+
+
+
+/***MAIN***/
+main{
+    
+    height: auto;
+}
+
+/*PRESENTACION*/
+.presentacionContenedor{
+    position: relative;
+    background-color: var(--color-1);
+    text-align: center;
+    min-height: 570px;
+    overflow: hidden;
+    padding-top: 5%;
+    width: 100%;
+}
+.presentacionContenedor article {
+   position: relative;
+   display: inline-block;
+   height: auto;
+   width: 400px;
+   margin: 2%;
+   
+}
+
+.presentacionContenedor article .miFoto {
+    max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 20px;
+    
+}
+.presentacionContenedor article h1{
+    margin: 0;
+    text-align: left;
+    font-size: 80px;
+    line-height: 100%;
+    word-wrap: break-word; /* rompe h1 y hace salto linea y no desborda caja */
+    color: var(--color-5);
+    
+}
+h2{
+    color: grey;
+    text-align: left;
+    font-size: 50px;
+
+}
+.textoPresentacion{
+    text-align: left;
+    font-size: 20px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    color: var(--color-3);
+}
+
+/**Botón contacto**/
+button{
+    position: relative;
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    right: 10%;
+    border:none;
+    border-radius: 20px;
+    font-weight: 800;
+    color:  var(--color-1);
+    background-color: var(--color-4);
+    cursor: pointer; /*manita al pasar el cursor*/
+}
+button:hover {
+    color:var(--color-4);
+    background-color: var(--color-2);
+    border: 3px solid var(--color-4);
+}
+
+/*FORMACION*/
+.formacionContenedor{
+    position: relative;
+    background-color: var(--color-2);
+    text-align: center;
+    min-height: 650px;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    
+    
+}
+
+.formacionContenedor article{
+    position: relative;
+    float: left;
+    top: 10%;
+    height: 460px;
+    width: 300px; /* Ancho de cada elemento */
+    margin: 2%; /* Espacio entre los elementos */
+    background-color: var(--color-6);
+    padding: 30px; 
+    border-radius: 30px;
+}
+
+.formacionContenedor article img{
+    width: map-get($tamanios-iconos , 'medio'); 
+}
+
+h4{
+    font-size: 20px;
+    padding-top: 10px;
+    color: var(--color-5);
+}
+.textoFormacion{
+    text-align:left;
+    padding-top: 10px;
+    
+    font-size: 16px;
+    /*hyphens: auto;  Activa la división de palabras en sílabas */
+}
+
+/*AFICIONES*/
+.aficionesContenedor{
+    background-color: var(--color-1);
+    text-align: center;
+    min-height: 580px;
+    padding-top: 5%;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-bottom: 5%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.aficionesContenedor article {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 4%;
+    text-align: center;
+}
+
+.aficionesContenedor article img {
+    width: map-get($tamanios-iconos , 'grande'); 
+}
+.aficionesContenedor p{
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+h3 {
+    font-size: 30px;
+    position: relative;
+    top: 5%;
+    color: var(--color-3);
+}
+
+p {
+    color: var(--color-5);
+}
+
+
+//debug mode
+.imagenDebug {
+    width: 50%;
+    @if $debug == false {
+        display: none;
+    } @else{
+        display: inline;
+    }
+}
