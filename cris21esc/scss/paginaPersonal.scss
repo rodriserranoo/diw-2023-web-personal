@@ -1,0 +1,26 @@
+@import "partials/_centro.scss";
+@import "partials/_top.scss";
+@import "partials/_main.scss";
+body{
+    background-color: rgb(255, 213, 0);
+}
+
+
+.cajabot{
+margin-top: 30px;
+background-color: red;
+width: 100%;
+bottom: 0px;
+display: flex;
+padding: 20px;
+justify-content: center; /* Centra horizontalmente los elementos */
+}
+.cajabot> div{
+    background-color: white;
+    padding: 10px 20px;
+    margin: 0px auto;
+}
+.idDer{
+    flex: 50%;
+
+}
