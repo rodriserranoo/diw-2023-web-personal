@@ -1,0 +1,31 @@
+$color-1-claro: #FFEBC9;
+$color-2-claro: #E8C07D;
+$color-3-claro: #614124;
+$color-4-claro: #9FC088;
+$color-5-claro: #CC704B;
+
+$colores-oscuros : (
+  #D1B282,
+  #A47836,
+  #3A1F0C,
+  #728E55,
+  #8D4319
+);
+:root{
+    .tema-claro{
+    --color-1:  #{$color-1-claro};
+    --color-2:  #{$color-2-claro};
+    --color-3:  #{$color-3-claro};
+    --color-4:  #{$color-4-claro};
+    --color-5:  #{$color-5-claro};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+    }
+} 
+
+// sass --watch workspace/DIW-MHP/Pegaso.S.A/SASS/MiWeb.scss workspace/DIW-MHP/Pegaso.S.A/CSS/main.css

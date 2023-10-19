@@ -1,0 +1,23 @@
+$palos-tamanios:(
+  'horizontal_long':490px,
+  'vertical_long':250px,
+  'nudo_long':30px,
+  'ancho':20px
+);
+
+
+html{
+    box-sizing: border-box;
+}
+body{
+    // background-color: #705545;
+    position: relative;
+}
+
+//Actiar modo debug
+$debug:true;
+
+@import "partials/menu";
+@import "partials/contenido";
+@import "partials/footer";
+@import "partials/modoNoche.scss";
