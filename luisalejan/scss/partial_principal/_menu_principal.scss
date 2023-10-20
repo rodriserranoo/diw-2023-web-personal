@@ -1,0 +1,39 @@
+header {
+
+    background-color: var(--color-1);
+    height: 70px;
+    position: sticky;
+    top: 10px;
+
+    filter: drop-shadow(0 -6mm 4mm var(--color-2));
+} 
+
+h1.menu {
+    width: 33.33%;
+    float: left;
+
+    text-align: center;
+    /*Heigut tiene q ir si no, el  h1 medio , se pierde*/
+    /* height: 50px;*/
+    font-family: cursive;
+    color: var(--color-5);
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+body {
+    height: 1000px;
+}
