@@ -1,0 +1,108 @@
+body{
+    background-color: #185B00;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#nav1 {
+    background-color: #330045;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    padding: 25px;
+    z-index: 3;
+}
+.li1{
+    display: inline-block;
+    color:#CCFFBA;
+    font-size: 25px;
+}
+.a1{
+    display: inline-block;
+    padding: 8px;
+}/*
+h1{
+    position: sticky;
+    top: 0;
+}*/
+.claseEstiloDiv{
+    background-color: #85C300;
+    border-radius: 20px;
+    color: #330045;
+    text-align: center;
+    position: relative;
+    padding: 70px;
+    height: 115px;
+    width: 350px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+::-webkit-scrollbar {
+    width: 0.1em; /* Ancho mínimo */
+    background-color: transparent; /* Fondo transparente */
+}
+  
+  /* Estilo del track (fondo de la barra de desplazamiento) */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+  /* Estilo del thumb (el indicador de la posición actual) */
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color del thumb transparente */
+}
+#div1{
+    top:5px;
+    float:left;
+    /*padding: 70px;
+    height: 115px;
+    width: 350px;
+    overflow: auto;*/
+}
+#div2{
+    top:5px;
+    float:right;
+    /*padding: 70px;
+    height: 115px;
+    width: 350px;
+    overflow: auto;*/
+}
+#div3{
+    bottom:505px;;
+    float:left;
+    /*padding: 70px;
+    height: 115px;
+    width: 350px;
+    overflow: auto;*/
+}
+#div4{
+    bottom: 505px;
+    float:right;
+    /*padding: 70px;
+    height: 115px;
+    width: 350px;
+    overflow: auto;*/
+}
+.divImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tamanoImagen{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.claseFooter{
+    background-color: #330045;
+    color: #CCFFBA;
+    border-radius: 10px;
+    position: sticky;
+    bottom: 0;
+    padding: 25px;
+    font-size: 25px;
+    text-align: center;
+}

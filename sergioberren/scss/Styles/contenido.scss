@@ -1,0 +1,61 @@
+body{
+    background-color: var(--color-1);
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.claseEstiloDiv{
+    background-color: var(--color-2);
+    border-radius: 20px;
+    color: #330045;
+    text-align: center;
+    position: relative;
+    padding: 70px;
+    height: 115px;
+    width: 350px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+::-webkit-scrollbar {
+    width: 0.1em; /* Ancho mínimo */
+    background-color: transparent; /* Fondo transparente */
+}
+  
+  /* Estilo del track (fondo de la barra de desplazamiento) */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+  /* Estilo del thumb (el indicador de la posición actual) */
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color del thumb transparente */
+}
+#div1{
+    top:5px;
+    float:left;
+}
+#div2{
+    top:5px;
+    float:right;
+}
+#div3{
+    bottom:505px;;
+    float:left;
+}
+#div4{
+    bottom: 505px;
+    float:right;
+}
+.divImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.tamanoImagen{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+}
