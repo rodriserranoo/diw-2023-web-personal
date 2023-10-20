@@ -1,0 +1,17 @@
+/** Elemento fixed **/
+.footer {
+    background-color: var(--color-1);
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    //--map-get($tamanio-icono-horizontal,footer);
+}
+
+.footer div,
+.sticky-menu div {
+    padding: 30px;
+    display: inline-block;
+    width: 22%;
+    top: 20px
+}
+

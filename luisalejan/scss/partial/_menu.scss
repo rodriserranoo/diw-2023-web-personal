@@ -1,0 +1,19 @@
+/* Sticky Menu */
+.sticky-menu {
+    background-color:var(--color-1);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    text-align: center;
+}
+
+
+
+
+h1 {
+    left: 50px;
+    top: 10px;
+    width: 80%;
+    position: relative;
+}
+
