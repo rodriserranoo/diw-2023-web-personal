@@ -67,11 +67,11 @@ body {
 /* ╔══════════════════════•°♥ Elementos ♥°•══════════════════════╗ */
 /* ══════════════════════•°♥ Circulo Foto ♥°•═════════════════════ */
 #idcirculogran {
-  position: relative;
   bottom: -11px;
-  background-color: #b87f59;
   width: 200px;
   height: 200px;
+  position: relative;
+  background-color: #b87f59;
   border-radius: 100%;
   margin-top: 30px;
   border: 10px solid var(--color-3);
@@ -166,11 +166,11 @@ body {
 
 /* ══════════════════════════•°♥ Circulo final ♥°•══════════════════════════ */
 #idcirculopeq {
-  position: relative;
   top: -41px;
-  background-color: #b87f59;
   width: 50px;
   height: 50px;
+  position: relative;
+  background-color: #b87f59;
   border-radius: 100%;
   margin-top: 30px;
   border: 10px solid var(--color-3);
@@ -258,24 +258,72 @@ body {
   animation: noEncimaBoton 0.1s linear 0s forwards;
 }
 
-.afic {
-  background-color: var(--color-4);
+#idjuegos {
+  background-image: url("../imagenes/juegos.png");
 }
 
-#idjuegos {
-  background-image: url(../imagenes/palanca-de-mando.png);
+.cajita {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-3);
+  border-radius: 10px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cajita:hover {
+  animation: encimaBoton 0.1s linear 0s forwards;
+}
+.cajita:not(:hover) {
+  animation: noEncimaBoton 0.1s linear 0s forwards;
 }
 
 #idescalada {
-  background-image: url(../imagenes/alpinismo.png);
+  background-image: url("../imagenes/escalada.png");
+}
+
+.cajita {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-3);
+  border-radius: 10px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cajita:hover {
+  animation: encimaBoton 0.1s linear 0s forwards;
+}
+.cajita:not(:hover) {
+  animation: noEncimaBoton 0.1s linear 0s forwards;
 }
 
 #idleer {
-  background-image: url(../imagenes/libro.png);
+  background-image: url("../imagenes/leer.png");
+}
+
+.cajita {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-3);
+  border-radius: 10px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cajita:hover {
+  animation: encimaBoton 0.1s linear 0s forwards;
+}
+.cajita:not(:hover) {
+  animation: noEncimaBoton 0.1s linear 0s forwards;
 }
 
 #idcocinar {
-  background-image: url(../imagenes/frito.png);
+  background-image: url("../imagenes/cocinar.png");
+}
+
+.afic {
+  background-color: var(--color-4);
 }
 
 .carder {
@@ -332,17 +380,89 @@ body {
 }
 
 /* ╚══════════════════════════•°♥ Fin carteles ♥°•══════════════════════════╝ */
+/* ╔════════════════•°♥ Pies ♥°•═══════════════╗ */
+#idredes {
+  width: 100%;
+  height: 150px;
+  background-color: var(--color-5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#idpie {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-3);
+  text-align: center;
+}
+
+#idcontLogo {
+  display: inline-block;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+#idlogo {
+  display: inline-block;
+  background-size: cover;
+  background-image: url(../imagenes/logo.png);
+  width: 60px;
+  height: 60px;
+}
+
+#idnombreLogo {
+  position: relative;
+  bottom: 15px;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  font-size: 30px;
+  color: var(--color-2);
+}
+
+#idinstagram {
+  margin: 10px;
+  background-color: var(--color-2);
+  background-image: url("../imagenes/instagram.png");
+}
+
+#idgmail {
+  margin: 10px;
+  background-color: var(--color-2);
+  background-image: url("../imagenes/gmail.png");
+}
+
+/* ╚═══════════•°♥ Fin pies ♥°•═══════════╝ */
+:root .tema-claro {
+  --color-1: #FFEBC9;
+  --color-2: #E8C07D;
+  --color-3: #614124;
+  --color-4: #9FC088;
+  --color-5: #CC704B;
+}
+:root .tema-oscuro {
+  --color-1: #D1B282;
+  --color-2: #A47836;
+  --color-3: #3A1F0C;
+  --color-4: #728E55;
+  --color-5: #8D4319;
+}
+
 /* Rellenos */
-* .circRelleno {
+.circRelleno {
+  border-radius: 100%;
   position: absolute;
   background-color: var(--color-4);
-  border-radius: 100%;
 }
 
 .paloRelleno {
+  z-index: 3;
   position: relative;
   background-color: var(--color-4);
-  z-index: 3;
 }
 
 /* Animaciones Relleno */
@@ -510,78 +630,6 @@ body {
       border-radius: 10px;
     }
   }
-}
-/* ╔════════════════•°♥ Pies ♥°•═══════════════╗ */
-#idredes {
-  width: 100%;
-  height: 150px;
-  background-color: var(--color-5);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.redes {
-  margin: 10px;
-  background-color: var(--color-2);
-}
-
-#idinstagram {
-  background-image: url(../imagenes/instagram.png);
-}
-
-#idcorreo {
-  background-image: url(../imagenes/gmail.png);
-}
-
-#idpie {
-  width: 100%;
-  height: 100px;
-  background-color: var(--color-3);
-  text-align: center;
-}
-
-#idcontLogo {
-  display: inline-block;
-  padding: 20px;
-  width: fit-content;
-  height: fit-content;
-  text-align: center;
-}
-
-#idlogo {
-  display: inline-block;
-  background-size: cover;
-  background-image: url(../imagenes/logo.png);
-  width: 60px;
-  height: 60px;
-}
-
-#idnombreLogo {
-  position: relative;
-  bottom: 15px;
-  display: inline-block;
-  width: fit-content;
-  height: fit-content;
-  font-size: 30px;
-  color: var(--color-2);
-}
-
-/* ╚═══════════•°♥ Fin pies ♥°•═══════════╝ */
-:root .tema-claro {
-  --color-1: #FFEBC9;
-  --color-2: #E8C07D;
-  --color-3: #614124;
-  --color-4: #9FC088;
-  --color-5: #CC704B;
-}
-:root .tema-oscuro {
-  --color-1: #D1B282;
-  --color-2: #A47836;
-  --color-3: #3A1F0C;
-  --color-4: #728E55;
-  --color-5: #8D4319;
 }
 
 /*# sourceMappingURL=main.css.map */
