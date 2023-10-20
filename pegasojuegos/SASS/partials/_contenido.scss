@@ -52,9 +52,9 @@ body{
     z-index: 2;
 
     @if $debug==false{
-        background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/foto.jpg);
+        background-image: url(../imagenes/foto.jpg);
     }@else{
-        background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/modoDebug.png);
+        background-image: url(../imagenes/modoDebug.png);
     }
 }
 /* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
@@ -218,16 +218,16 @@ body{
     background-color: var(--color-4);
 }
 #idjuegos{
-    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/palanca-de-mando.png);
+    background-image: url(../imagenes/palanca-de-mando.png);
 }
 #idescalada{
-    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/alpinismo.png);      
+    background-image: url(../imagenes/alpinismo.png);      
 }
 #idleer{
-    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/libro.png);
+    background-image: url(../imagenes/libro.png);
 }
 #idcocinar{
-    background-image: url(/workspace/DIW-MHP/Pegaso.S.A/imagenes/frito.png);
+    background-image: url(../imagenes/frito.png);
 }
 .carder{
     left: 2%;
