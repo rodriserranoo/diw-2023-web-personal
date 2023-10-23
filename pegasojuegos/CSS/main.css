@@ -32,7 +32,6 @@ header {
 .menu-element:hover {
   background-color: var(--color-4);
   color: #FFEBC9;
-  box-shadow: 5px solid black;
 }
 
 /* ╔════════════════•°♥ Fondos ♥°•═══════════════╗ */
@@ -88,7 +87,7 @@ body {
   margin-top: 10px;
   border: 10px solid var(--color-3);
   z-index: 2;
-  background-image: url(../imagenes/foto.jpg);
+  background-image: url(../imagenes/modoDebug.png);
 }
 
 /* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
@@ -456,13 +455,13 @@ body {
 .circRelleno {
   border-radius: 100%;
   position: absolute;
-  background-color: var(--color-4);
+  background-color: rgb(233, 45, 45);
 }
 
 .paloRelleno {
   z-index: 3;
   position: relative;
-  background-color: var(--color-4);
+  background-color: rgb(233, 45, 45);
 }
 
 /* Animaciones Relleno */
