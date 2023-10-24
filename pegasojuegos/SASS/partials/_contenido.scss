@@ -29,18 +29,21 @@ body{
 /* ╔══════════════════════•°♥ Elementos ♥°•══════════════════════╗ */
 
 /* ══════════════════════•°♥ Circulo Foto ♥°•═════════════════════ */
-#idcirculogran{
+@mixin circulo($w,$h){
+    width: $w;
+    height: $h;
     position: relative;
-    bottom: -11px;
     background-color: #b87f59;
-    width: 200px;
-    height: 200px;
     border-radius: 100%;
     margin-top: 30px;
     border: 10px solid var(--color-3);
     display: flex;
     align-items: center;
     flex-direction: column;
+}  
+#idcirculogran{
+    bottom: -11px;
+    @include circulo(200px,200px);
 }
 #idfoto{
     background-size: cover;
@@ -122,18 +125,8 @@ body{
 }
 /* ══════════════════════════•°♥ Circulo final ♥°•══════════════════════════ */
 #idcirculopeq{
-    position: relative;
     top: -41px;    
-    background-color: #b87f59;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-top: 30px;
-    border: 10px solid var(--color-3);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
+    @include circulo(50px,50px);
 }
 /* ╚══════════════════════════•°♥ Fin Elementos ♥°•══════════════════════════╝ */
 
@@ -198,36 +191,32 @@ body{
     width: 100%;
     height: 100%;
 }
-.cajita{
-    width: 50px;
-    height: 50px;
-    border: 3px solid var(--color-3);
-    border-radius: 10px;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    &:hover{
-        animation: encimaBoton 0.1s linear 0s forwards;
+
+$cajas:juegos escalada leer cocinar;
+
+@each $caja in $cajas{
+    .cajita{
+        width: 50px;
+        height: 50px;
+        border: 3px solid var(--color-3);
+        border-radius: 10px;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &:hover{
+            animation: encimaBoton 0.1s linear 0s forwards;
+        }
+        &:not(:hover){
+            animation: noEncimaBoton 0.1s linear 0s forwards;
+        }
     }
-    &:not(:hover){
-        animation: noEncimaBoton 0.1s linear 0s forwards;
+    #id#{$caja}{
+        background-image: url("../imagenes/#{$caja}.png");
     }
 }
 .afic{
     background-color: var(--color-4);
-}
-#idjuegos{
-    background-image: url(../imagenes/palanca-de-mando.png);
-}
-#idescalada{
-    background-image: url(../imagenes/alpinismo.png);      
-}
-#idleer{
-    background-image: url(../imagenes/libro.png);
-}
-#idcocinar{
-    background-image: url(../imagenes/frito.png);
 }
 .carder{
     left: 2%;
@@ -275,118 +264,3 @@ body{
     right:30px;
 }
 /* ╚══════════════════════════•°♥ Fin carteles ♥°•══════════════════════════╝ */
-
-
-/* Rellenos */*
-.circRelleno{
-    position: absolute;
-    background-color: var(--color-4);
-    border-radius: 100%;
-}
-.paloRelleno{
-    position: relative;
-    background-color: var(--color-4);
-    z-index: 3;
-}
-/* Animaciones Relleno */
-@keyframes rellenarVertical {
-    from{ height: 0%;}
-    to{ height: 100%;}
-}
-
-@keyframes rellenarHorizontalIzq{
-    from{ 
-        height:100%;
-        width: 0%;
-        left: 100%;
-    }
-    to{ 
-        height:100%;
-        width: 100%;
-        left:0%
-    }
-}
-@keyframes rellenarHorizontalDer{
-   from{
-    height:100%;
-    width: 0%;
-}
-   to{
-    height:100%;
-    width: 100%;
-}
-}
-@keyframes rellenarCirculo {
-    from{
-        top: 25%;
-        width: 50%;
-        height: 50%;
-    }
-    to{
-        top: 0%;
-        width: 100%;
-        height: 100%;
-    }
-}
-@keyframes rellenarUnionCirculo {
-    from{ height: 0%;}
-    to{ height: 105%;}
-}
-#t1{animation: rellenarCirculo 1s linear 0s forwards;}
-#t2{animation: rellenarVertical 1s linear 1s forwards;}
-#t3{animation: rellenarVertical 0.08s linear 2s forwards;}
-#t4{animation: rellenarHorizontalDer 1.96s linear 2.08s forwards;}
-#t5{animation: rellenarVertical 1s linear 4.04s forwards;}
-#t6{animation: rellenarVertical 0.08s linear 5.04s forwards;}
-#t7{animation: rellenarHorizontalIzq 1.96s linear 5.12s forwards;}
-#t8{animation: rellenarVertical 1s linear 7.08s forwards;}
-#t9{animation: rellenarVertical 0.08s linear 8.08s forwards;}
-#t10{animation: rellenarHorizontalDer 1.96s linear 8.16s forwards;}
-#t11{animation: rellenarVertical 1s linear 10.12s forwards;}
-#t12{animation: rellenarUnionCirculo 1s linear 11.12s forwards;}
-#t13{animation: rellenarCirculo 0.5s linear 12.2s forwards;}
-
-/* Animaciones carteles */
- @keyframes moverCartel {
-    from{top: -220px;}
-    60%{top:10px}
-    70%{top:-10px}
-    80%{top:10px;}
-    90%{top:0px;}
-    to{top:10px}
-}
-
-#c1{animation: moverCartel 1s ease-in 4.04s forwards;} 
-#c2{animation: moverCartel 1s ease-in 7.08s forwards;} 
-#c3{animation: moverCartel 1s ease-in 10.12s forwards;}  
-/*
-#c1{animation: moverCartel 0s ease-in 0s forwards;} 
-#c2{animation: moverCartel 0s ease-in 0s forwards;} 
-#c3{animation: moverCartel 0s ease-in 0s forwards;} 
-*/
-/*Animacion botón*/
-@keyframes encimaBoton {
-    from{
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-    }
-    to{
-        width: 60px;
-        height: 60px;
-        background-size: 45px;  
-    }
-}
-@keyframes noEncimaBoton {
-    from{
-        width: 60px;
-        height: 60px;
-        background-size: 45px;
-        
-    to{
-        width: 50px;
-        height: 50px;
-        border-radius: 10px;
-    }
-    }
-}

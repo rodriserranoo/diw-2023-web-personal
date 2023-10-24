@@ -15,9 +15,18 @@ body{
 }
 
 //Actiar modo debug
-$debug:false;
+$debug:true;
+
+
+
 
 @import "partials/menu";
 @import "partials/contenido";
 @import "partials/footer";
 @import "partials/modoNoche.scss";
+@import "partials/animaciones";
+
+
+
+
+

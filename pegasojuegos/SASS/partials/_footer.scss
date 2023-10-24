@@ -9,16 +9,6 @@
     align-items: center;
     justify-content: center;
 }
-.redes{
-    margin: 10px;
-    background-color: var(--color-2);
-}
-#idinstagram{
-    background-image: url(../imagenes/instagram.png);
-}
-#idcorreo{
-    background-image: url(../imagenes/gmail.png);
-}
 #idpie{
     width: 100%;
     height: 100px;
@@ -48,4 +38,14 @@
     font-size: 30px;
     color: var(--color-2);
 }
+
+$redes: instagram gmail;
+@each $red in $redes{
+    #id#{$red} {
+      margin: 10px;
+      background-color: var(--color-2);
+      background-image: url("../imagenes/#{$red}.png");
+    }
+  }
+  
 /* ╚═══════════•°♥ Fin pies ♥°•═══════════╝ */
