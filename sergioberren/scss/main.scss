@@ -1,0 +1,34 @@
+$color-1-claro: #FFC107;
+$color-2-claro: #4CAF50;
+$color-3-claro: #2196F3;
+$color-4-claro: #FF5722;
+$color-5-claro: #9C27B0;
+
+$colores-oscuros : (
+    #607D8B,
+    #FF9800,
+    #03A9F4,
+    #FFEB3B,
+    #9E9E9E
+);
+
+:root {
+    .tema-claro{
+        --color-1: #{$color-1-claro};
+        --color-2: #{$color-2-claro};
+        --color-3: #{$color-3-claro}; 
+        --color-4: #{$color-4-claro};
+        --color-5: #{$color-5-claro};
+    }
+    .tema-oscuro{
+        --color-1: #{nth($colores-oscuros,1)};
+        --color-2: #{nth($colores-oscuros,2)};
+        --color-3: #{nth($colores-oscuros,3)};
+        --color-4: #{nth($colores-oscuros,4)};
+        --color-5: #{nth($colores-oscuros,5)};
+    }
+}
+
+@import './Styles/contenido.scss';
+@import './Styles/menu.scss';
+@import './Styles/footer.scss';
