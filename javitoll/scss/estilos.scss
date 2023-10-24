@@ -1,0 +1,58 @@
+@import "./partials/boton.scss";
+@import "./partials/header.scss";
+@import "./partials/main.scss";
+@import "./partials/footer.scss";
+
+
+
+
+
+
+$color-1-claro: #B0C2F2;
+$color-2-claro: #B0F2C2;
+$color-3-claro: #7d7;
+$color-4-claro: #fff;
+
+
+$colores-oscuros : (
+  #154360 ,
+  #17a589 ,
+  #186a3b ,
+  #95a5a6 
+);
+
+:root {
+  .tema-claro{
+  --color-1:  #{$color-1-claro};
+  --color-2:  #{$color-2-claro};
+  --color-3:  #{$color-3-claro};
+  --color-4:  #{$color-4-claro};
+  }
+  .tema-oscuro{
+    --color-1:  #{nth($colores-oscuros,1)};
+    --color-2:  #{nth($colores-oscuros,2)};
+    --color-3:  #{nth($colores-oscuros,3)};
+    --color-4:  #{nth($colores-oscuros,4)};
+    
+  }
+} 
+
+
+
+
+
+
+
+body{
+    background-color: var(--color-1);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
