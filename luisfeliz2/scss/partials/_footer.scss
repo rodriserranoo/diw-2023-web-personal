@@ -1,0 +1,29 @@
+
+$redes:facebook gmail instagram;
+
+
+.redes{
+    height: map-get($tamanio , "grande" );
+    position: absolute;
+    top: 150px;
+    right: 50px;
+
+    & img{
+
+        height: map-get($tamanio, "medio" ) ;
+        display: block;
+        padding: 3px;
+        position: relative;
+        }
+}
+$fuentes: (
+    encabezado: 'Arial, sans-serif',
+    parrafo: 'Helvetica Neue, sans-serif',
+    enlace: 'Times New Roman, serif'
+);
+
+@each $nombre, $fuente in $fuentes {
+    .#{$nombre} {
+        font-family: #{$fuente};
+    }
+}
