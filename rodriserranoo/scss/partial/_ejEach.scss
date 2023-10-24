@@ -1,0 +1,17 @@
+$colores: green orange red;
+
+@each $indice in $colores {
+    .color-#{$indice} {
+    background-color: $indice;
+}
+}
+
+$redes: facebook twitter instagram;
+
+@each $red in $redes {
+    .icon-#{$red} {
+        background-image: url(`/imagenes/#{$red}.png`);
+    }
+
+
+}

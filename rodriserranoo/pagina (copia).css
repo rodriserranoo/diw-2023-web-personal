@@ -1,0 +1,84 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    background-color: black;
+}
+
+header {
+    top: 0%;
+    position: sticky;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    display: flex;
+
+}
+
+.logoRodri {
+    position: sticky;
+    width: 8%;
+    height: 95%;
+    margin-top: 0%;
+
+}
+
+.menu {    
+    width: 30%;
+    display: inline-block;
+    position: sticky;
+    left: 70%;
+    margin-top: 2%;
+
+}
+
+.menu a{
+    color: white;
+    margin: 4%;
+
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+
+}
+
+footer {
+    background-color: rgb(250, 250, 250);
+    opacity: 60%;
+    width: 100%;
+    height: 10%;
+    color: aqua;
+    position: fixed;
+    bottom: 0%;
+    z-index: 10;
+
+
+}
+
+.imagenesLogo {
+    text-align: center;
+}
+
+.imagenesLogo img{
+text-align: center;
+height: 50px;
+padding: 1% 3%;
+}
+
+.sobreMi {
+width: 100%;
+height: auto;
+background-color: black;
+color: aqua;
+z-index: 2;
+position: sticky;
+top: 0%;
+text-align: center;
+padding: 3%;
+
+}

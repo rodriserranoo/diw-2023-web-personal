@@ -1,0 +1,29 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    background-color: black;
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+
+}
+
+@import "partial/menu";
+
+@import "partial/footer";
+
+@import "partial/sobreMi";
+
+@import "partial/formacion";
+
+@import "partial/boton";
+
+@import "partial/ejEach"
+
