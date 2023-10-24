@@ -1,0 +1,64 @@
+
+$color-1-claro:deepskyblue;
+$color-2-claro:black;
+$color-3-claro:white;
+
+
+$colores-claros:(
+    red,
+    blue,
+    white,
+    green
+);
+
+$tamanio:(
+    "pequenio":10px,
+    "medio":30px,
+    "grande":50px,
+    "L":300px
+
+);
+
+$tamanios-porcentaje:(
+    'pequenios':25%,
+    'medio':50%,
+    'grande':100%
+);
+//pa lo colores lista 
+//pa los tamaños
+
+:root .tema-oscuro {
+        --color1: deepskyblue;
+        --color2: green;
+        --color3:  blue;
+        --color4: violet;
+        --color5: #fff;
+        --color6:
+      }
+
+:root .tema-claro{
+
+    --color1:white;
+    --color2:deepskyblue;
+
+}
+
+
+.padre{
+    background-color: var(--color1);
+    height: 900px;
+}
+
+body{
+    margin: 0;
+    height: 500px;
+    background-color: var(--color2);
+    
+}
+//  debug:false;
+
+@import "partials/menus";
+@import "partials/contenido";
+@import "partials/estilos.scss";
+@import "partials/trabajo.scss";
+@import "partials/footer.scss";
