@@ -1,22 +1,35 @@
-footer {
-    background-color: rgb(250, 250, 250);
-    opacity: 60%;
-    width: 100%;
-    height: 10%;
-    color: aqua;
-    position: fixed;
-    bottom: 0%;
-    z-index: 10;
+@function textAlign($donde) {
+    @return $donde;
+}
+
+@mixin estilosFooter {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-5);
+  color: var(--color-2);
+  z-index: 2;
+  position: sticky;
+  top: 0%;
+  text-align: textAlign(center);
+  padding: 3%;
+}
 
 
+
+.footer {
+  @include estilosFooter;
+}
+
+@mixin estilosImagenesLogo {
+  text-align: textAlign(center);
 }
 
 .imagenesLogo {
-    text-align: center;
-}
+  @include estilosImagenesLogo;
 
-.imagenesLogo img{
-text-align: center;
-height: 100px;
-padding: 1% 3%;
+  img {
+    text-align: textAlign(center);
+    height: 100px;
+    padding: 1% 3%;
+  }
 }

@@ -1,12 +1,33 @@
+.padreSobreMi {
+    background-image: url(imagenes/agujero-negro.jpg);
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el contenedor */
+
+}
 .sobreMi {
     width: 100%;
     height: auto;
-    background-color: black;
-    color: aqua;
+    background-color: var(--color-1);
+    color: var(--color-2);
     z-index: 2;
     position: sticky;
     top: 0%;
     text-align: center;
     padding: 3%;
-    
     }
+
+
+
+
+    .textoSobreMi {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    color: var(--color-2);
+    background-color: var(--color-1); 
+    padding: 20px; 
+    z-index: 0;
+}

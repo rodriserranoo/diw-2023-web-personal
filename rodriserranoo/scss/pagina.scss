@@ -1,19 +1,69 @@
+$color-1-claro: black;
+$color-2-claro: rgb(71, 71, 71);
+$color-3-claro: rgb(117, 117, 117);
+$color-4-claro: rgb(173, 173, 173);
+$color-5-claro: aqua(0, 0, 0);
+
+$colores-claros: (
+    rgb(161, 161, 161),
+    rgb(255, 255, 255),
+    rgb(117, 117, 117),
+    rgb(255, 255, 255),
+    aqua(0, 0, 0),
+    );
+
+$colores-oscuros: (
+    rgb(43, 43, 43),
+    rgb(255, 255, 255),
+    rgb(117, 117, 117),
+    rgb(173, 173, 173),
+    rgb(41, 41, 41),
+    );
+
+:root {
+
+    .tema-claro {
+        --color-1: #{nth($colores-claros,1)};
+        --color-2: #{nth($colores-claros,2)};
+        --color-3: #{nth($colores-claros,3)};
+        --color-4: #{nth($colores-claros,4)};
+        --color-5: #{nth($colores-claros,5)};
+         
+        
+         
+        
+    }
+    .tema-oscuro {
+        --color-1: #{nth($colores-oscuros,1)};
+        --color-2: #{nth($colores-oscuros,2)};
+        --color-3: #{nth($colores-oscuros,3)};
+        --color-4: #{nth($colores-oscuros,4)};
+        --color-5: #{nth($colores-oscuros,5)};
+    }
+
+
 
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0%;
-    background-color: black;
+    background-color: var(--color-1);
 }
 
 .fondo {
     width: 100%;
     height: 100%;
+    z-index: -99;
 
 }
+
+
+}
+
 
 @import "partial/menu";
 
@@ -25,5 +75,8 @@ body {
 
 @import "partial/boton";
 
-@import "partial/ejEach"
+@import "partial/ejEach";
 
+@import "partial/cv";
+
+@import "partial/contacto"
